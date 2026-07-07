@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andesh &amp; Nina Wedding Table Plan</title>
+    <meta name="description" content="Wedding seating table plan for Andesh and Nina." />
+    <style>
+      :root {
+        --bg: #f5f1eb;
+        --paper: #ffffff;
+        --ink: #1f2937;
+        --muted: #6b7280;
+        --accent: #7c3aed;
+        --accent-2: #0f766e;
+        --border: #e5ddd3;
+        --shadow: 0 10px 30px rgba(31, 41, 55, 0.08);
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(180deg, #fffdf9 0%, var(--bg) 100%);
+        color: var(--ink);
+      }
+      .wrap {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 28px 18px 56px;
+      }
+      .hero {
+        background: var(--paper);
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        box-shadow: var(--shadow);
+        padding: 28px;
+        margin-bottom: 22px;
+      }
+      .eyebrow {
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        font-size: 12px;
+        color: var(--accent-2);
+        font-weight: 700;
+      }
+      h1 {
+        margin: 10px 0 8px;
+        font-size: clamp(34px, 6vw, 64px);
+        line-height: 1.02;
+      }
+      .sub {
+        margin: 0;
+        color: var(--muted);
+        font-size: 17px;
+        line-height: 1.6;
+        max-width: 860px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 14px;
+      }
+      .card {
+        background: var(--paper);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        box-shadow: var(--shadow);
+        padding: 18px;
+      }
+      .card.top {
+        grid-column: 1 / -1;
+      }
+      .table-title {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: baseline;
+        margin-bottom: 12px;
+      }
+      .table-title h2 {
+        margin: 0;
+        font-size: 22px;
+      }
+      .pill {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: #ede9fe;
+        color: #5b21b6;
+        white-space: nowrap;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 8px;
+      }
+      li {
+        padding: 10px 12px;
+        border-radius: 12px;
+        background: #faf7f2;
+        border: 1px solid #f0e7dc;
+        line-height: 1.35;
+      }
+      .name {
+        font-weight: 700;
+      }
+      .role {
+        color: var(--muted);
+      }
+      .note {
+        margin-top: 14px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .footer {
+        margin-top: 22px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      @media (max-width: 640px) {
+        .hero, .card { border-radius: 16px; }
+        .table-title { align-items: flex-start; flex-direction: column; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="hero">
+        <div class="eyebrow">Wedding Table Plan</div>
+        <h1>Andesh &amp; Nina</h1>
+        <p class="sub">
+          A public table plan for Andesh and Nina's wedding reception. This page reflects the table allocation
+          from the provided document and is designed to be readable on mobile and desktop.
+        </p>
+      </section>
+
+      <section class="grid" aria-label="Table plan">
+        <article class="card top">
+          <div class="table-title">
+            <h2>Top Table</h2>
+            <span class="pill">Honor table</span>
+          </div>
+          <ul>
+            <li><span class="name">Manmohan S Matharu</span> <span class="role">- Father of the Groom</span></li>
+            <li><span class="name">Lakhwinder K Matharu</span> <span class="role">- Mother of the Groom</span></li>
+            <li><span class="name">Andesh S Matharu</span> <span class="role">- Groom</span></li>
+            <li><span class="name">Nina Romano</span> <span class="role">- Bride</span></li>
+            <li><span class="name">Giac Romano</span> <span class="role">- Brother of the Bride</span></li>
+            <li><span class="name">Tammy Romano</span> <span class="role">- Sister-In-Law of the Bride</span></li>
+          </ul>
+        </article>
+
+        <article class="card"><div class="table-title"><h2>Table 1</h2><span class="pill">Bridesmaid table</span></div><ul><li><span class="name">Nunzia Lupton</span> <span class="role">- Bridesmaid</span></li><li><span class="name">Anna Lupton</span> <span class="role">- Maid of Honour</span></li><li><span class="name">Ryan Lupton</span></li><li><span class="name">Lorenzo Lupton</span></li><li><span class="name">Pietro Jnr Romano</span></li><li><span class="name">Pietro Romano</span></li><li><span class="name">Rachel Kinton</span></li><li><span class="name">Nunzia Romano</span> <span class="role">- Bridesmaid</span></li></ul></article>
+        <article class="card"><div class="table-title"><h2>Table 2</h2><span class="pill">Family</span></div><ul><li><span class="name">Jaswinder K Kundi</span></li><li><span class="name">Samrita K Matharu</span> <span class="role">- Bridesmaid</span></li><li><span class="name">Samraj S Matharu</span></li><li><span class="name">Jeevan S Matharu</span></li></ul></article>
+        <article class="card"><div class="table-title"><h2>Table 3</h2><span class="pill">Family</span></div><ul><li><span class="name">Antonio Navarra</span></li><li><span class="name">Pietro Navarra</span></li><li><span class="name">Laura Williams</span></li><li><span class="name">Dom Navarra</span></li><li><span class="name">Alessia Navarra</span></li><li><span class="name">Joy Navarra</span></li><li><span class="name">Giacinto Navarra</span></li><li><span class="name">Franco Romano</span></li><li><span class="name">Maria Romano</span></li><li><span class="name">Giuseppina Romano</span></li></ul></article>
+        <article class="card"><div class="table-title"><h2>Table 4</h2><span class="pill">Family</span></div><ul><li><span class="name">Harbhajan S Kundi</span></li><li><span class="name">Ravinder K Kundi</span></li><li><span class="name">Jassa S Kundi</span></li><li><span class="name">Ricky S Kundi</span></li><li><span class="name">Arjun S Kundi</span></li><li><span class="name">Ajeet S Kundi</span></li><li><span class="name">Natalie K Kundi</span></li><li><span class="name">Ariyan S Kundi</span></li><li><span class="name">Dhiyan S Kundi</span></li></ul></article>
+        <article class="card"><div class="table-title"><h2>Table 5</h2><span class="pill">Family</span></div><ul><li><span class="name">Raj S Nandhra</span></li><li><span class="name">Aisha K Nandhra</span></li><li><span class="name">Aman S Nandhra</span></li><li><span class="name">Avni K Nandhra</span></li><li><span class="name">Jai S Nandhra</span></li></ul></article>
+        <article class="card"><div class="table-title"><h2>Table 6</h2><span class="pill">Friends</span></div><ul><li><span class="name">Ellis Goodwin</span></li><li><span class="name">Gerry Fitzpatrick</span></li><li><span class="name">Aaron Wilson</span> <span class="role">- Best Man</span></li><li><span class="name">Clare Liggins</span></li><li><span class="name">Jason Weafer</span></li><li><span class="name">Alex Oldfield</span></li><li><span class="name">Tamas Vagvolgyi</span></li></ul></article>
+        <article class="card"><div class="table-title"><h2>Table 7</h2><span class="pill">Friends</span></div><ul><li><span class="name">Ed Wells</span></li><li><span class="name">Lara Wells</span></li><li><span class="name">Oscar Wells</span></li><li><span class="name">Amy Wells</span></li><li><span class="name">Ella Rayns</span></li><li><span class="name">Nikki Robinson</span></li><li><span class="name">Zoe Hill</span></li><li><span class="name">Vivienne Gunaratne</span></li><li><span class="name">Gulsah Gibson</span></li><li><span class="name">Graham Gibson</span></li></ul></article>
+        <article class="card"><div class="table-title"><h2>Table 8</h2><span class="pill">Friends</span></div><ul><li><span class="name">Ludivine Correia De Barros</span></li><li><span class="name">Charlotte Read</span></li><li><span class="name">Sunita Gokani</span></li><li><span class="name">Sachin Gokani</span></li><li><span class="name">Pedro Ribeiro</span></li><li><span class="name">Reena Navsaria</span></li><li><span class="name">Smita Ruparelia</span></li><li><span class="name">Ravi Ruparelia</span></li><li><span class="name">Kuldeep Goswami</span></li><li><span class="name">Sneya Rajani</span></li></ul></article>
+        <article class="card"><div class="table-title"><h2>Table 9</h2><span class="pill">Family</span></div><ul><li><span class="name">Gurbinder S Kalsi</span></li><li><span class="name">Satinder K Kalsi</span></li><li><span class="name">Amarjit S Kalsi</span></li><li><span class="name">Kulwinder K Kalsi</span></li><li><span class="name">Manraj S Kalsi</span></li><li><span class="name">Hirna K Kalsi</span></li><li><span class="name">Avneet K Kalsi</span></li><li><span class="name">Inderpreet K Kalsi</span></li></ul></article>
+        <article class="card"><div class="table-title"><h2>Table 10</h2><span class="pill">Family</span></div><ul><li><span class="name">Pam K Jandhu</span></li><li><span class="name">Kuldeep S Jandhu</span></li><li><span class="name">Arun S Jandhu</span></li><li><span class="name">Jai S Jandhu</span></li><li><span class="name">Manveer S Jandhu</span></li><li><span class="name">Jinder K Jandhu</span></li><li><span class="name">Harjinder S Ghataore</span></li><li><span class="name">Baljit S Ghataore</span></li><li><span class="name">Ranjit S Bansal</span></li><li><span class="name">Jagdeep K Bansal</span></li></ul></article>
+        <article class="card"><div class="table-title"><h2>Table 11</h2><span class="pill">Family</span></div><ul><li><span class="name">Baljinder S Ghataore</span></li><li><span class="name">Manjit K Ghataore</span></li><li><span class="name">Dilpreet S Ghataore</span></li><li><span class="name">Parminder M Ghataore</span></li><li><span class="name">Amrik S Ghataore</span></li><li><span class="name">Inderjit K Ghataore</span></li></ul></article>
+        <article class="card"><div class="table-title"><h2>Table 12</h2><span class="pill">Family</span></div><ul><li><span class="name">Surjit S Matharu</span></li><li><span class="name">Rajinder K Matharu</span></li><li><span class="name">Deep S Matharu</span></li><li><span class="name">Jasbir S Matharu</span></li><li><span class="name">Pritpal K Matharu</span></li><li><span class="name">Sukhvinder S Matharu</span></li><li><span class="name">Manjeet K Matharu</span></li><li><span class="name">Surinder K Matharu</span></li></ul></article>
+        <article class="card"><div class="table-title"><h2>Table 13</h2><span class="pill">Family</span></div><ul><li><span class="name">Balwinder S Bancil</span></li><li><span class="name">Charanjit K Bancil</span></li><li><span class="name">Tirath S Bancil</span></li><li><span class="name">Sharan K Bancil</span></li><li><span class="name">Harai S Bancil</span></li><li><span class="name">Asees K Bancil</span></li><li><span class="name">Jagdeep S Bancil</span></li><li><span class="name">Veen K Bancil</span></li><li><span class="name">Seva S Bancil</span></li><li><span class="name">Kirpa K Bancil</span></li></ul></article>
+        <article class="card"><div class="table-title"><h2>Table 14</h2><span class="pill">Family</span></div><ul><li><span class="name">Satpal S Kalsi</span></li><li><span class="name">Raj K Kalsi</span></li><li><span class="name">Roop K Kalsi</span></li><li><span class="name">Rajan S Kalsi</span></li><li><span class="name">Sandeep K Kalsi</span></li><li><span class="name">Nihal S Kalsi</span></li></ul></article>
+        <article class="card"><div class="table-title"><h2>Table 15</h2><span class="pill">Family</span></div><ul><li><span class="name">Tashwinder S Kundhi</span></li><li><span class="name">Geeta K Kundhi</span></li><li><span class="name">Gurmeet S Chagger</span></li><li><span class="name">Amarjit K Chagger</span></li><li><span class="name">Rajkeeran K Kundhi</span></li><li><span class="name">Nita Topiwala</span></li></ul></article>
+      </section>
+
+        <p class="note">Public wedding site version. The seating plan reflects the uploaded document and is safe to share broadly.</p>
+        <p class="footer">If a name or table assignment changes, update this file and redeploy the Netlify site.</p>
+      </main>
+  </body>
+</html>
