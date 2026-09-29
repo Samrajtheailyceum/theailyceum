@@ -779,6 +779,9 @@
         .ep-num { width: 30px; height: 30px; font-size: 11px; }
       }
     </style>
+
+    <!-- ChatGPT Pixel -->
+    <script>!function(w,d,s,u){if(w.oaiq)return;var q=function(){q.q.push(arguments)};q.q=[];w.oaiq=q;var j=d.createElement(s);j.async=1;j.src=u;var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f)}(window,document,"script","https://bzrcdn.openai.com/sdk/oaiq.min.js");oaiq("init",{pixelId:"2DHixaHTCH9nD7i982fUnC",debug:true});</script>
   </head>
   <body>
     <header>
@@ -1343,5 +1346,12 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      oaiq("measure","page_viewed",{type:"contents"});
+      document.querySelectorAll('.cta-btn, .cta-secondary, a[href^="mailto:"]').forEach(function(el){
+        el.addEventListener("click",function(){oaiq("measure","lead_created",{type:"customer_action"});});
+      });
+    </script>
   </body>
 </html>
