@@ -780,8 +780,33 @@
       }
     </style>
 
-    <!-- ChatGPT Pixel -->
-    <script>!function(w,d,s,u){if(w.oaiq)return;var q=function(){q.q.push(arguments)};q.q=[];w.oaiq=q;var j=d.createElement(s);j.async=1;j.src=u;var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f)}(window,document,"script","https://bzrcdn.openai.com/sdk/oaiq.min.js");oaiq("init",{pixelId:"2DHixaHTCH9nD7i982fUnC",debug:true});</script>
+    <!-- Consent Mode v2 defaults (deny until user consents) -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied',
+        'functionality_storage': 'denied',
+        'personalization_storage': 'denied',
+        'security_storage': 'granted',
+        'wait_for_update': 2000
+      });
+    </script>
+    <!-- ChatGPT Pixel — loaded after consent only -->
+    <script>
+      (function(){
+        var loaded = false;
+        window.__loadChatGPTPixel = function() {
+          if (loaded) return; loaded = true;
+          !function(w,d,s,u){if(w.oaiq)return;var q=function(){q.q.push(arguments)};q.q=[];w.oaiq=q;var j=d.createElement(s);j.async=1;j.src=u;var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f)}(window,document,"script","https://bzrcdn.openai.com/sdk/oaiq.min.js");
+          oaiq("init",{pixelId:"2DHixaHTCH9nD7i982fUnC",debug:true});
+          oaiq("measure","page_viewed",{type:"contents"});
+        };
+      })();
+    </script>
   </head>
   <body>
     <header>
@@ -1347,11 +1372,89 @@
       </div>
     </footer>
 
+    <!-- Cookie consent banner + ChatGPT pixel gating -->
     <script>
-      oaiq("measure","page_viewed",{type:"contents"});
-      document.querySelectorAll('.cta-btn, .cta-secondary, a[href^="mailto:"]').forEach(function(el){
-        el.addEventListener("click",function(){oaiq("measure","lead_created",{type:"customer_action"});});
-      });
+      (function(){
+        var CONSENT_KEY = 'cookie-consent-lyceum-site';
+        var banner, stored;
+
+        function grantConsent() {
+          try { localStorage.setItem(CONSENT_KEY, JSON.stringify({status:'accepted',ts:Date.now()})); } catch(e){}
+          if (window.gtag) {
+            window.gtag('consent','update',{
+              analytics_storage:'granted',
+              ad_storage:'granted',
+              ad_user_data:'granted',
+              ad_personalization:'granted',
+              functionality_storage:'granted',
+              personalization_storage:'granted'
+            });
+          }
+          if (window.__loadChatGPTPixel) window.__loadChatGPTPixel();
+          hideBanner();
+        }
+
+        function denyConsent() {
+          try { localStorage.setItem(CONSENT_KEY, JSON.stringify({status:'declined',ts:Date.now()})); } catch(e){}
+          if (window.gtag) {
+            window.gtag('consent','update',{
+              analytics_storage:'denied',
+              ad_storage:'denied',
+              ad_user_data:'denied',
+              ad_personalization:'denied',
+              functionality_storage:'denied',
+              personalization_storage:'denied'
+            });
+          }
+          hideBanner();
+        }
+
+        function hideBanner() {
+          if (banner && banner.parentNode) banner.parentNode.removeChild(banner);
+        }
+
+        function isFresh(record) {
+          if (!record || !record.ts) return false;
+          return (Date.now() - record.ts) < 6 * 30 * 24 * 60 * 60 * 1000;
+        }
+
+        try { stored = JSON.parse(localStorage.getItem(CONSENT_KEY)); } catch(e){}
+
+        if (stored && isFresh(stored)) {
+          if (stored.status === 'accepted') {
+            if (window.gtag) {
+              window.gtag('consent','update',{
+                analytics_storage:'granted', ad_storage:'granted',
+                ad_user_data:'granted', ad_personalization:'granted',
+                functionality_storage:'granted', personalization_storage:'granted'
+              });
+            }
+            if (window.__loadChatGPTPixel) window.__loadChatGPTPixel();
+          }
+        } else {
+          // Show consent banner
+          banner = document.createElement('div');
+          banner.setAttribute('role','dialog');
+          banner.setAttribute('aria-label','Cookie consent');
+          banner.style.cssText = 'position:fixed;bottom:0;left:0;right:0;z-index:9999;background:rgba(255,255,255,0.97);border-top:1px solid #e7e5e4;padding:16px 24px;font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:14px;color:#1c1917;box-shadow:0 -4px 20px rgba(0,0,0,0.08);backdrop-filter:blur(8px)';
+          banner.innerHTML = '<div style="max-width:960px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:16px">'
+            + '<div style="flex:1;min-width:240px"><strong>We value your privacy</strong><br><span style="color:#78716c;font-size:13px">We use cookies and tracking technologies for analytics and to improve your experience. Non-essential tracking is only enabled with your consent. You may withdraw consent at any time.</span></div>'
+            + '<div style="display:flex;gap:8px;flex-shrink:0">'
+            + '<button id="cc-accept" style="padding:10px 20px;background:#1d4ed8;color:#fff;border:none;border-radius:6px;font-weight:600;font-size:13px;cursor:pointer">Accept All</button>'
+            + '<button id="cc-reject" style="padding:10px 20px;background:transparent;color:#1c1917;border:1px solid #e7e5e4;border-radius:6px;font-weight:600;font-size:13px;cursor:pointer">Reject All</button>'
+            + '</div></div>';
+          document.body.appendChild(banner);
+          document.getElementById('cc-accept').addEventListener('click', grantConsent);
+          document.getElementById('cc-reject').addEventListener('click', denyConsent);
+        }
+
+        // Wire CTA click tracking (only fires if pixel loaded)
+        document.querySelectorAll('.cta-btn, .cta-secondary, a[href^="mailto:"]').forEach(function(el){
+          el.addEventListener("click",function(){
+            if (window.oaiq) oaiq("measure","lead_created",{type:"customer_action"});
+          });
+        });
+      })();
     </script>
   </body>
 </html>
