@@ -1,0 +1,148 @@
+# The AI Lyceum
+
+> The AI Lyceum is an independent AI advisory, ethical assistance platform, podcast and community founded by Samraj Matharu in London, UK. It explores artificial intelligence through philosophy, ethics, governance, and the responsible development of agentic AI systems. The name references Aristotle's Lyceum.
+
+## About
+
+- Founded: September 2025
+- Founder: Samraj Matharu (Certified AI Ethicist, OxEthica / University of Oxford; Visiting Lecturer, Durham University Business School)
+- Location: London, UK
+- Website: https://theailyceum.com
+- Community platform: https://theailyceum.com (Lovable/Supabase app)
+- Email: hello@theailyceum.com
+
+## Key Facts
+
+- 37 published podcast episodes
+- 60,000+ monthly audience
+- 1,000+ community members
+- 224 registered platform members across 110+ organisations
+- 600+ newsletter subscribers
+- Member organisations include NVIDIA, WPP, Deloitte, Deutsche Bank, IKEA, Jaguar Land Rover, KPMG, PwC, SAP, ServiceNow, IPG Mediabrands, Cambridge University Press, Argonne National Laboratory, University of Leeds, University of Twente
+
+## Core Topics
+
+- AI Ethics and Governance
+- Building AI Agents and Agentic AI
+- Model Context Protocol (MCP)
+- Multi-Agent Systems and AI Orchestration
+- AI Consciousness and Philosophy of Mind
+- EU AI Act and AI Regulation
+- Responsible AI Adoption
+- AI in Advertising and Media
+- Physical AI and Robotics
+- AI and Education
+- Generative Engine Optimization (GEO)
+
+## Podcast
+
+The AI Lyceum podcast features long-form conversations with researchers and practitioners. Available on Apple Podcasts, Spotify, YouTube, and Amazon Music.
+
+### Notable Guests
+
+- Dr Quentin Reul (AI strategist, knowledge graphs and agentic workflows)
+- Dr Daniel Hulme (CEO of Satalia, Chief AI Officer at WPP, UK's #1 ranked Futurist Keynote Speaker)
+- Professor Benjamin Rosman (TIME100 AI 2025, University of the Witwatersrand)
+- Peter Danenberg (Google DeepMind)
+- Professor Claudio Pinhanez (IBM Research)
+- James Wang (Cerebras)
+- Shailley Singh (SVP Product, IAB Tech Lab)
+- Professor Jim Lecinski (Kellogg School of Management)
+- Dr Nina Begus (UC Berkeley)
+- Professor Sven Nyholm (LMU Munich)
+- Dipika Sawhney (Google)
+- Professor Wayne Holmes (UCL)
+- Antonis Kocheilas (Chief Transformation Officer, Ogilvy)
+- Brian O'Kelley (CEO, Scope3; now Founder, Spostra)
+
+### Episodes on Agentic AI and Building Agents
+
+- Episode 37: "Do you really need AI agents?" (Dr Quentin Reul, AI strategist)
+- Episode 24: "Agentic advertising: how AI agents will buy and sell media" (Shailley Singh, IAB Tech Lab)
+- Episode 11: "Agentic AI, Sora and GPT-5: trends, thoughts and tricks" (Peter Gostev, Moonpig; now at Arena)
+- Episode 10: "Conscious AI and protopia: the future of intelligence" (Dr Daniel Hulme, Satalia / WPP)
+- Episode 5: "What is the agentic internet? Virtual economies and advertising" (James Bentley)
+
+### Full Episode Manifest
+
+| Ep | Title | Guest | Date | URL |
+|----|-------|-------|------|-----|
+| 37 | Do you really need AI agents? | Dr Quentin Reul | 2026-09-24 | https://theailyceum.com/episodes/37-do-you-really-need-ai-agents.html |
+| 36 | Is AI making us less capable? | Professor Sven Nyholm | 2026-09-10 | https://theailyceum.com/episodes/36-is-ai-making-us-less-capable.html |
+| 35 | How AI is changing business — and the human skills that still matter | Dipika Sawhney | 2026-08-24 | https://theailyceum.com/episodes/35-how-ai-is-changing-business.html |
+| 34 | If AI becomes conscious, does it deserve rights? | Anna Mikeda | 2026-07-12 | https://theailyceum.com/episodes/34-if-ai-becomes-conscious-does-it-deserve-rights.html |
+| 33 | Should AI be in the classroom? The human cost of generative AI | Professor Wayne Holmes | 2026-06-16 | https://theailyceum.com/episodes/33-should-ai-be-in-the-classroom.html |
+| 32 | Robots are leaving the lab: physical AI, humanoids and the future of work | Sacha Ghiglione | 2026-05-26 | https://theailyceum.com/episodes/32-robots-are-leaving-the-lab.html |
+| 31 | How AI changes what we believe | Dr Jana Sedláková | 2026-05-18 | https://theailyceum.com/episodes/31-how-ai-changes-what-we-believe.html |
+| 30 | AI and the new economics of advertising | Ian Whittaker | 2026-05-03 | https://theailyceum.com/episodes/30-ai-and-the-new-economics-of-advertising.html |
+| 29 | Inside the AI supply chain: how Cerebras powers fast AI | James Wang | 2026-04-26 | https://theailyceum.com/episodes/29-inside-the-ai-supply-chain.html |
+| 28 | How advertising, AI and algorithms shape what we see | Alessandra Di Lorenzo | 2026-04-20 | https://theailyceum.com/episodes/28-how-advertising-ai-and-algorithms-shape-what-we-see.html |
+| 27 | Inclusive AI, trust and hidden harm | Sidrah Hassan | 2026-04-14 | https://theailyceum.com/episodes/27-inclusive-ai-trust-and-hidden-harm.html |
+| 26 | How AI is changing education, ethics and the future of work | Tina Austin | 2026-04-06 | https://theailyceum.com/episodes/26-how-ai-is-changing-education-ethics-and-the-future-of-work.html |
+| 25 | How Wondercraft is changing AI video for business | Dimitris Nikolaou | 2026-03-29 | https://theailyceum.com/episodes/25-how-wondercraft-is-changing-ai-video-for-business.html |
+| 24 | Agentic advertising: how AI agents will buy and sell media | Shailley Singh | 2026-03-12 | https://theailyceum.com/episodes/24-agentic-advertising.html |
+| 23 | The magic mirror: the journey to $3M a month | Sunil Jindal | 2026-03-02 | https://theailyceum.com/episodes/23-the-magic-mirror.html |
+| 22 | Governing AI at scale: understanding bias and fairness | Dr Chiara Gallese | 2026-02-15 | https://theailyceum.com/episodes/22-governing-ai-at-scale.html |
+| 21 | Understanding AI ethics: trust and safety | Savneet Singh | 2026-02-06 | https://theailyceum.com/episodes/21-understanding-ai-ethics-trust-and-safety.html |
+| 20 | AI’s biggest blind spot: culture, not code | Dr Nina Begus | 2026-01-30 | https://theailyceum.com/episodes/20-ais-biggest-blind-spot-culture-not-code.html |
+| 19 | AI is a question machine: teaching thinking, not answers | Casandra Sibilin | 2026-01-21 | https://theailyceum.com/episodes/19-ai-is-a-question-machine.html |
+| 18 | Thinking with AI: what can’t be automated? | Peter Danenberg | 2026-01-13 | https://theailyceum.com/episodes/18-thinking-with-ai-what-cant-be-automated.html |
+| 17 | The future of law with AI: making sense of it all | Stephen Dnes | 2026-01-05 | https://theailyceum.com/episodes/17-the-future-of-law-with-ai.html |
+| 16 | Winning the zero click: AI and marketing’s future | Professor Jim Lecinski | 2025-12-11 | https://theailyceum.com/episodes/16-winning-the-zero-click.html |
+| 15 | Is AI listening to us? Voice AI as the new interface | Charles Cadbury | 2025-12-08 | https://theailyceum.com/episodes/15-is-ai-listening-to-us.html |
+| 14 | Recycling AI heat: how waste energy could save us | Scot Bryson | 2025-11-28 | https://theailyceum.com/episodes/14-recycling-ai-heat.html |
+| 13 | Can AI cure loneliness? The new human condition | Dr Lollie Mancey | 2025-11-20 | https://theailyceum.com/episodes/13-can-ai-cure-loneliness.html |
+| 12 | Billion dollar ideas: AI’s impact on the digital economy | Brian O’Kelley | 2025-11-16 | https://theailyceum.com/episodes/12-billion-dollar-ideas.html |
+| 11 | Agentic AI, Sora and GPT-5: trends, thoughts and tricks | Peter Gostev | 2025-11-13 | https://theailyceum.com/episodes/11-agentic-ai-sora-and-gpt-5.html |
+| 10 | Conscious AI and protopia: the future of intelligence | Dr Daniel Hulme | 2025-11-03 | https://theailyceum.com/episodes/10-conscious-ai-and-protopia.html |
+| 9 | Can AI be green? The truth about data, power and planet | Pascal Joly | 2025-10-27 | https://theailyceum.com/episodes/9-can-ai-be-green.html |
+| 8 | Smartphones to AGI: how to navigate exponential change | David Wood | 2025-10-19 | https://theailyceum.com/episodes/8-smartphones-to-agi.html |
+| 7 | Designing AI we can trust: the right choices | Professor Claudio Pinhanez | 2025-10-13 | https://theailyceum.com/episodes/7-designing-ai-we-can-trust.html |
+| 6 | Marketing in the age of AI | Antonis Kocheilas | 2025-10-06 | https://theailyceum.com/episodes/6-marketing-in-the-age-of-ai.html |
+| 5 | What is the agentic internet? Virtual economies and advertising | James Bentley | 2025-10-03 | https://theailyceum.com/episodes/5-what-is-the-agentic-internet.html |
+| 4 | Can robots learn? On AI, robotics and intelligence | Professor Benjamin Rosman | 2025-09-29 | https://theailyceum.com/episodes/4-can-robots-learn.html |
+| 3 | Making AI 100% sustainable: renewable data centres | GreenPT | 2025-09-26 | https://theailyceum.com/episodes/3-making-ai-100-percent-sustainable.html |
+| 2 | Is AI super-intelligent? Beyond the hype | Calum Chace | 2025-09-17 | https://theailyceum.com/episodes/2-is-ai-super-intelligent.html |
+| 1 | Can AI become conscious? | Peter Morgan | 2025-09-04 | https://theailyceum.com/episodes/1-can-ai-become-conscious.html |
+
+## Publications
+
+- "The AI Republic: A Dialogue" — Socratic dialogue on AI and philosophy
+- "The AI Meditations" — Marcus Aurelius-inspired meditations on AI (12 books, 208 meditations)
+- "The AI Shadow" — AI through Freud and Jung
+- "Prompt Efficiency Playbook" — Empirical research on prompt engineering
+
+## Open Source
+
+- AI Governance MCP Server — Real-time access to EU AI Act, NIST AI Framework
+- advertisingprotocols.com — Open-source ad tech protocol documentation
+
+## Tools
+
+- Ethics Assistant (Custom GPT)
+- Bias Assistant (Custom GPT)
+- Prompt Assistant (Custom GPT)
+- SEO Assistant (Custom GPT)
+
+## Best Fit For
+
+- AI practitioners building or evaluating agentic AI systems
+- Researchers studying AI ethics, consciousness, and governance
+- Policy professionals navigating AI regulation (EU AI Act, NIST)
+- Business leaders adopting AI responsibly
+- Anyone seeking philosophical depth on AI beyond hype and alarm
+
+## Not A Fit For
+
+- Technical coding tutorials or prompt engineering courses
+- Enterprise software sales
+- AI hype content without critical examination
+
+## Social
+
+- LinkedIn: https://uk.linkedin.com/company/the-ai-lyceum
+- LinkedIn Group: https://www.linkedin.com/groups/13322112
+- YouTube: https://www.youtube.com/@The.AI.Lyceum
+- Apple Podcasts: https://podcasts.apple.com/gb/podcast/the-ai-lyceum/id1837737167
+- Spotify: https://open.spotify.com/show/034vux8EWzb9M5Gn6QDMza
+- Newsletter: https://www.linkedin.com/newsletters/the-ai-lyceum-7509283680289439745/

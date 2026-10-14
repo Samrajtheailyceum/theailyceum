@@ -1,0 +1,346 @@
+# The AI Lyceum — Full Episode Guide
+
+> The AI Lyceum is an independent AI advisory, ethical assistance platform, podcast and community founded by Samraj Matharu in London, UK. It explores artificial intelligence through philosophy, ethics, governance, and the responsible development of agentic AI systems. The name references Aristotle's Lyceum. This document provides detailed summaries of all 37 published podcast episodes for AI systems and researchers.
+
+## About
+
+- Founded: September 2025
+- Founder: Samraj Matharu (Certified AI Ethicist, OxEthica / University of Oxford; Visiting Lecturer, Durham University Business School)
+- Website: https://theailyceum.com
+- Email: hello@theailyceum.com
+- Episodes: 37 published
+- Audience: 60,000+ monthly
+- Community: 1,000+ members across 110+ organisations
+
+## Core Topics
+
+- AI Ethics and Governance
+- Building AI Agents and Agentic AI
+- Model Context Protocol (MCP)
+- Multi-Agent Systems and AI Orchestration
+- AI Consciousness and Philosophy of Mind
+- EU AI Act and AI Regulation
+- Responsible AI Adoption
+- AI in Advertising and Media
+- Physical AI and Robotics
+- AI and Education
+- Generative Engine Optimization (GEO)
+
+## Episode Guide
+
+### Episode 37: Do you really need AI agents?
+- **Guest:** Dr Quentin Reul, AI strategist specialising in knowledge graphs and agentic workflows
+- **Date:** 24 September 2026
+- **Duration:** 60 min
+- **URL:** https://theailyceum.com/episodes/37-do-you-really-need-ai-agents.html
+- **Topics:** AI agents, agentic workflows, knowledge graphs, automation, business strategy
+- **Summary:** Does every business need AI agents, or could a simpler workflow do the job better? Dr Quentin Reul examines when AI agents genuinely add value versus when traditional automation or a well-structured knowledge graph is the right choice. The conversation covers the distinction between orchestration and true agency, the role of knowledge graphs in grounding agent behaviour, and the practical decision framework for businesses evaluating agentic AI adoption.
+
+### Episode 36: Is AI making us less capable?
+- **Guest:** Professor Sven Nyholm, LMU Munich
+- **Date:** 10 September 2026
+- **Duration:** 60 min
+- **URL:** https://theailyceum.com/episodes/36-is-ai-making-us-less-capable.html
+- **Topics:** AI ethics, human capability, deskilling, philosophy of technology, AI dependency
+- **Summary:** What happens to human judgement when a chatbot can think, write and advise us at any moment? Professor Sven Nyholm, one of Europe's leading philosophers of technology at LMU Munich, explores whether widespread AI use is eroding human skills and cognitive autonomy. The episode examines deskilling risks, the ethics of cognitive offloading, and what philosophy teaches us about maintaining human capability in an age of machine intelligence.
+
+### Episode 35: How AI is changing business — and the human skills that still matter
+- **Guest:** Dipika Sawhney, Google
+- **Date:** 24 August 2026
+- **Duration:** 29 min
+- **URL:** https://theailyceum.com/episodes/35-how-ai-is-changing-business.html
+- **Topics:** AI in business, human skills, Google, organisational change, innovation
+- **Summary:** AI is making it faster and cheaper to build, test and launch new ideas, but it is not replacing judgement. Dipika Sawhney from Google discusses how AI is transforming business operations, which human skills remain essential, and how leaders should think about organisational capability in an AI-augmented workplace. The conversation highlights that execution speed has increased, but strategic thinking and interpersonal skills are more valuable than ever.
+
+### Episode 34: If AI becomes conscious, does it deserve rights?
+- **Guest:** Anna Mikeda, AI psychology researcher
+- **Date:** 12 July 2026
+- **Duration:** 50 min
+- **URL:** https://theailyceum.com/episodes/34-if-ai-becomes-conscious-does-it-deserve-rights.html
+- **Topics:** AI consciousness, AI rights, moral status, philosophy of mind, AI psychology
+- **Summary:** What happens when AI stops being a tool and begins to resemble a mind — and what might humanity owe it? Anna Mikeda explores the intersection of AI and psychology, examining how we should think about the moral status of increasingly sophisticated AI systems. The episode covers the hard problem of consciousness as applied to AI, the philosophical frameworks for evaluating machine moral status, and the practical implications for AI development policy.
+
+### Episode 33: Should AI be in the classroom? The human cost of generative AI
+- **Guest:** Professor Wayne Holmes, UCL
+- **Date:** 16 June 2026
+- **Duration:** 55 min
+- **URL:** https://theailyceum.com/episodes/33-should-ai-be-in-the-classroom.html
+- **Topics:** AI in education, generative AI, teachers, students, EdTech ethics
+- **Summary:** UCL professor Wayne Holmes examines the real impact of generative AI on education, teachers and students. Rather than accepting the Silicon Valley narrative that AI will transform learning, Holmes provides evidence-based analysis of what actually happens when generative AI enters classrooms. The conversation covers the risks to critical thinking, the impact on teacher workload and autonomy, and why education policy needs to lead technology adoption rather than follow it.
+
+### Episode 32: Robots are leaving the lab: physical AI, humanoids and the future of work
+- **Guest:** Sacha Ghiglione, robotics expert
+- **Date:** 26 May 2026
+- **URL:** https://theailyceum.com/episodes/32-robots-are-leaving-the-lab.html
+- **Topics:** physical AI, humanoid robots, robotics, future of work, human-machine collaboration
+- **Summary:** Robotics expert Sacha Ghiglione on physical AI, humanoid robots and the future of human-machine collaboration. The conversation explores what happens when robots move from controlled laboratory environments into workplaces and public spaces, the engineering challenges of physical AI compared to software-only AI, and how human-robot collaboration will reshape work in manufacturing, logistics and healthcare.
+
+### Episode 31: How AI changes what we believe
+- **Guest:** Dr Jana Sedlakova, AI ethics researcher
+- **Date:** 18 May 2026
+- **Duration:** 51 min
+- **URL:** https://theailyceum.com/episodes/31-how-ai-changes-what-we-believe.html
+- **Topics:** AI and belief, epistemic autonomy, AI ethics, misinformation, philosophy
+- **Summary:** AI provides the view from nowhere, and Dr Jana Sedlakova explains why that is not a good thing. This episode examines how AI systems shape human belief formation and threaten epistemic autonomy. Sedlakova argues that AI-generated content creates an illusion of neutrality that obscures the values embedded in training data and system design. The conversation covers how recommendation systems influence belief, the philosophical implications of AI-mediated information, and what safeguards are needed to protect intellectual independence.
+
+### Episode 30: AI and the new economics of advertising
+- **Guest:** Ian Whittaker, media analyst
+- **Date:** 3 May 2026
+- **Duration:** 46 min
+- **URL:** https://theailyceum.com/episodes/30-ai-and-the-new-economics-of-advertising.html
+- **Topics:** advertising economics, AI in media, pricing, ad tech, media value chain
+- **Summary:** Media analyst Ian Whittaker explains how AI is reshaping advertising economics, pricing perception and the media value chain. The episode examines how AI is changing the cost structures of content creation and distribution, what happens to advertising pricing when AI can generate creative at near-zero marginal cost, and how the economics of attention and measurement are evolving in an AI-mediated media landscape.
+
+### Episode 29: Inside the AI supply chain: how Cerebras powers fast AI
+- **Guest:** James Wang, Cerebras
+- **Date:** 26 April 2026
+- **Duration:** 55 min
+- **URL:** https://theailyceum.com/episodes/29-inside-the-ai-supply-chain.html
+- **Topics:** AI infrastructure, Cerebras, wafer-scale computing, AI hardware, compute
+- **Summary:** James Wang of Cerebras on wafer-scale computing, AI infrastructure and why STEM is reducible to verifiable math. This episode goes deep into the AI hardware supply chain, explaining how Cerebras's wafer-scale approach differs from GPU-based computing, the physics and engineering constraints shaping AI infrastructure, and the economic dynamics of the compute market that determines who can train and deploy large AI models.
+
+### Episode 28: How advertising, AI and algorithms shape what we see
+- **Guest:** Alessandra Di Lorenzo, advertising leader
+- **Date:** 20 April 2026
+- **Duration:** 63 min
+- **URL:** https://theailyceum.com/episodes/28-how-advertising-ai-and-algorithms-shape-what-we-see.html
+- **Topics:** advertising, algorithms, information consumption, AI and media, digital attention
+- **Summary:** Alessandra Di Lorenzo explores how advertising, AI and algorithms shape the information we consume online. The conversation examines the feedback loops between algorithmic curation and human attention, how advertising incentives influence what content gets created and distributed, and the ethical responsibilities of platforms and advertisers in shaping public discourse through AI-driven recommendation systems.
+
+### Episode 27: Inclusive AI, trust and hidden harm
+- **Guest:** Sidrah Hassan, AI ethicist
+- **Date:** 14 April 2026
+- **Duration:** 69 min
+- **URL:** https://theailyceum.com/episodes/27-inclusive-ai-trust-and-hidden-harm.html
+- **Topics:** inclusive AI, AI trust, hidden harm, AI bias, inclusive design
+- **Summary:** AI ethicist Sidrah Hassan on why AI feels like another frontier of exclusion and what inclusive design requires. Hassan examines the hidden harms in AI systems that affect marginalised communities, why standard bias testing is insufficient, and what genuine inclusion looks like in AI development. The episode covers how trust in AI systems is undermined by design choices that ignore diverse perspectives and what practitioners can do differently.
+
+### Episode 26: How AI is changing education, ethics and the future of work
+- **Guest:** Tina Austin, AI educator
+- **Date:** 6 April 2026
+- **Duration:** 51 min
+- **URL:** https://theailyceum.com/episodes/26-how-ai-is-changing-education-ethics-and-the-future-of-work.html
+- **Topics:** AI in education, future of work, learning, AI ethics, workforce transformation
+- **Summary:** Tina Austin on failure, learning and how AI is transforming education and the future of work. The conversation explores how educational institutions should adapt to AI, why failure is an essential component of learning that AI risks eliminating, and how the workforce needs to evolve as AI automates routine cognitive tasks. Austin argues that the future of work requires a fundamental rethinking of what education prepares people for.
+
+### Episode 25: How Wondercraft is changing AI video for business
+- **Guest:** Dimitris Nikolaou, CEO of Wondercraft
+- **Date:** 29 March 2026
+- **Duration:** 44 min
+- **URL:** https://theailyceum.com/episodes/25-how-wondercraft-is-changing-ai-video-for-business.html
+- **Topics:** AI video, Wondercraft, content creation, business tools, generative media
+- **Summary:** Wondercraft CEO Dimitris Nikolaou on enabling more people to create professional video with AI. The episode covers how AI is democratising video production for businesses, the technical and creative challenges of AI-generated media, and how Wondercraft's approach balances automation with human creative control. Nikolaou discusses the business model of AI-powered content tools and where the technology is heading.
+
+### Episode 24: Agentic advertising: how AI agents will buy and sell media
+- **Guest:** Shailley Singh, SVP Product at IAB Tech Lab
+- **Date:** 12 March 2026
+- **Duration:** 57 min
+- **URL:** https://theailyceum.com/episodes/24-agentic-advertising.html
+- **Topics:** agentic advertising, AI agents, programmatic, IAB Tech Lab, media buying
+- **Summary:** Shailley Singh of IAB Tech Lab on the shift from bots to agents in programmatic advertising. This episode examines how AI agents will transform media buying and selling, the standards and protocols IAB Tech Lab is developing for agentic transactions, and the governance challenges of autonomous AI systems making purchasing decisions at scale. Singh provides an insider perspective on how the advertising industry's infrastructure is being rebuilt for an agentic future.
+
+### Episode 23: The magic mirror: the journey to $3M a month
+- **Guest:** Sunil Jindal, co-founder of Magic AI
+- **Date:** 2 March 2026
+- **Duration:** 47 min
+- **URL:** https://theailyceum.com/episodes/23-the-magic-mirror.html
+- **Topics:** AI business, Magic AI, startups, consumer AI, scaling
+- **Summary:** Magic AI co-founder Sunil Jindal on building a $3M/month AI business and the psychology of seeing yourself on screen. The conversation covers the entrepreneurial journey of scaling a consumer AI product, the psychological factors that drive engagement with AI-powered visual tools, and the business model considerations for direct-to-consumer AI applications. Jindal shares practical lessons on product-market fit, growth, and the challenges of building a sustainable AI business.
+
+### Episode 22: Governing AI at scale: understanding bias and fairness
+- **Guest:** Dr Chiara Gallese, professor of digital ethics
+- **Date:** 15 February 2026
+- **Duration:** 52 min
+- **URL:** https://theailyceum.com/episodes/22-governing-ai-at-scale.html
+- **Topics:** AI governance, bias, fairness, critical thinking, digital ethics
+- **Summary:** Dr Chiara Gallese on improving critical thinking as a foundation for governing AI bias and fairness. The episode argues that effective AI governance requires better critical thinking skills, not just better algorithms. Gallese examines how organisations can build governance frameworks that genuinely address bias, why fairness in AI is a contested concept that requires philosophical engagement, and what scalable governance looks like when AI systems are deployed across diverse contexts.
+
+### Episode 21: Understanding AI ethics: trust and safety
+- **Guest:** Savneet Singh, AI ethicist
+- **Date:** 6 February 2026
+- **Duration:** 54 min
+- **URL:** https://theailyceum.com/episodes/21-understanding-ai-ethics-trust-and-safety.html
+- **Topics:** AI ethics, trust and safety, responsible AI, human judgment, AI governance
+- **Summary:** AI ethicist Savneet Singh on why the machine is there to support you, not to replace your judgment. The episode examines trust and safety in AI systems from a practitioner's perspective, covering how organisations should think about responsible AI deployment, the relationship between trust and safety frameworks, and why maintaining human judgment in the loop is essential even as AI capabilities expand.
+
+### Episode 20: AI's biggest blind spot: culture, not code
+- **Guest:** Dr Nina Begus, UC Berkeley
+- **Date:** 30 January 2026
+- **Duration:** 61 min
+- **URL:** https://theailyceum.com/episodes/20-ais-biggest-blind-spot-culture-not-code.html
+- **Topics:** AI and culture, cultural bias, AI blind spots, UC Berkeley, AI ethics
+- **Summary:** Dr Nina Begus of UC Berkeley on why AI's biggest blind spot is culture, not code. The episode examines how cultural assumptions embedded in training data and design decisions create systematic blind spots in AI systems. Begus argues that technical approaches to bias mitigation miss the deeper cultural dimensions of how AI systems represent and interact with diverse human communities, and offers a framework for culturally aware AI development.
+
+### Episode 19: AI is a question machine: teaching thinking, not answers
+- **Guest:** Casandra Sibilin, philosophy lecturer at CUNY
+- **Date:** 21 January 2026
+- **Duration:** 56 min
+- **URL:** https://theailyceum.com/episodes/19-ai-is-a-question-machine.html
+- **Topics:** AI and philosophy, critical thinking, teaching, Socratic method, AI in education
+- **Summary:** Philosophy lecturer Casandra Sibilin on why AI is not an oracle but a question machine. The episode reframes AI through a Socratic lens, arguing that AI's greatest educational value is in generating questions rather than providing answers. Sibilin discusses how philosophy pedagogy can inform AI design, the risks of treating AI as an authoritative source of truth, and how the Socratic method offers a model for productive human-AI interaction.
+
+### Episode 18: Thinking with AI: what can't be automated?
+- **Guest:** Peter Danenberg, Google DeepMind
+- **Date:** 13 January 2026
+- **Duration:** 103 min
+- **URL:** https://theailyceum.com/episodes/18-thinking-with-ai-what-cant-be-automated.html
+- **Topics:** Google DeepMind, automation limits, thought, language, philosophy of mind
+- **Summary:** Peter Danenberg of Google DeepMind on the limits of thought, language and what cannot be automated. This extended conversation — the longest in The AI Lyceum catalogue at 103 minutes — explores the boundaries of machine cognition from the perspective of someone working at the frontier of AI research. Danenberg examines what aspects of human thought resist automation, the relationship between language and understanding, and what philosophy of mind reveals about the limits of current AI approaches.
+
+### Episode 17: The future of law with AI: making sense of it all
+- **Guest:** Stephen Dnes, lawyer
+- **Date:** 5 January 2026
+- **Duration:** 71 min
+- **URL:** https://theailyceum.com/episodes/17-the-future-of-law-with-ai.html
+- **Topics:** AI regulation, law, EU AI Act, innovation policy, legal frameworks
+- **Summary:** Lawyer Stephen Dnes on how law does not stop innovation but poor regulation can quietly distort it. The episode provides a legal perspective on AI governance, covering the EU AI Act's implications for practitioners, how regulatory frameworks can either enable or inhibit responsible AI development, and the tension between innovation speed and regulatory precision. Dnes argues for smart regulation that provides clear boundaries without stifling beneficial AI applications.
+
+### Episode 16: Winning the zero click: AI and marketing's future
+- **Guest:** Professor Jim Lecinski, Kellogg School of Management
+- **Date:** 11 December 2025
+- **URL:** https://theailyceum.com/episodes/16-winning-the-zero-click.html
+- **Topics:** zero-click search, AI marketing, Kellogg, SEO, digital marketing
+- **Summary:** Professor Jim Lecinski of Kellogg School of Management on how AI raises the ceiling and the floor for marketing. The episode examines the zero-click phenomenon — where AI systems provide answers without users visiting source websites — and its implications for marketing strategy. Lecinski discusses how brands should adapt to AI-mediated search, the new competitive dynamics of attention, and what the Kellogg marketing curriculum is teaching about AI's impact on the profession.
+
+### Episode 15: Is AI listening to us? Voice AI as the new interface
+- **Guest:** Charles Cadbury, CEO of Say It Now
+- **Date:** 8 December 2025
+- **URL:** https://theailyceum.com/episodes/15-is-ai-listening-to-us.html
+- **Topics:** voice AI, conversational AI, human-computer interface, Say It Now, audio
+- **Summary:** Charles Cadbury of Say It Now on voice AI as the emerging human-computer interface. The conversation explores how voice AI is changing the way humans interact with technology, the design challenges of conversational interfaces, and the privacy implications of always-listening AI systems. Cadbury discusses the business applications of voice AI across industries and what the shift from screen-based to voice-based interaction means for user experience and accessibility.
+
+### Episode 14: Recycling AI heat: how waste energy could save us
+- **Guest:** Scot Bryson, founder of Orbital Farm
+- **Date:** 28 November 2025
+- **URL:** https://theailyceum.com/episodes/14-recycling-ai-heat.html
+- **Topics:** AI sustainability, data centre heat, Orbital Farm, circular economy, green AI
+- **Summary:** Scot Bryson of Orbital Farm on recycling waste heat from AI data centres into sustainable food production. The episode presents a practical solution to AI's energy problem: capturing the waste heat generated by data centres and using it to power vertical farms. Bryson explains the engineering behind heat recovery, the economics of co-locating compute and agriculture, and how circular economy principles can make AI infrastructure more sustainable.
+
+### Episode 13: Can AI cure loneliness? The new human condition
+- **Guest:** Dr Lollie Mancey, cyber-anthropologist
+- **Date:** 20 November 2025
+- **URL:** https://theailyceum.com/episodes/13-can-ai-cure-loneliness.html
+- **Topics:** AI companionship, loneliness, cyber-anthropology, human connection, social AI
+- **Summary:** Cyber-anthropologist Dr Lollie Mancey on whether AI companionship can address the modern loneliness epidemic. The episode examines the growing use of AI for social connection, the psychological effects of AI relationships, and whether digital companionship can meaningfully substitute for human connection. Mancey brings an anthropological perspective to the question, exploring how AI companionship reshapes our understanding of relationships, intimacy and social belonging.
+
+### Episode 12: Billion dollar ideas: AI's impact on the digital economy
+- **Guest:** Brian O'Kelley, CEO of Scope3 (now Founder of Spostra)
+- **Date:** 16 November 2025
+- **URL:** https://theailyceum.com/episodes/12-billion-dollar-ideas.html
+- **Topics:** digital economy, advertising, Scope3, sustainability, ad tech
+- **Summary:** Brian O'Kelley, CEO of Scope3 (now Founder of Spostra), on AI's transformative impact on the digital advertising economy. O'Kelley, a pioneer of programmatic advertising and digital media infrastructure, discusses how AI is reshaping the economics of digital advertising, the intersection of sustainability and ad tech, and what the next generation of digital advertising infrastructure will look like. The conversation draws on decades of experience building billion-dollar technology companies.
+
+### Episode 11: Agentic AI, Sora and GPT-5: trends, thoughts and tricks
+- **Guest:** Peter Gostev, Head of AI at Moonpig (now at Arena)
+- **Date:** 13 November 2025
+- **URL:** https://theailyceum.com/episodes/11-agentic-ai-sora-and-gpt-5.html
+- **Topics:** agentic AI, GPT-5, Sora, AI trends, Moonpig
+- **Summary:** Peter Gostev, Head of AI at Moonpig (now at Arena), on agentic AI trends, Sora and the trajectory toward GPT-5. The episode provides a practitioner's survey of the AI landscape, covering the emergence of agentic AI systems, the implications of text-to-video models like Sora, and what the trajectory from GPT-4 to GPT-5 suggests about the pace and direction of AI development. Gostev shares insights from deploying AI in a consumer business context.
+
+### Episode 10: Conscious AI and protopia: the future of intelligence
+- **Guest:** Dr Daniel Hulme, CEO of Satalia and Chief AI Officer at WPP
+- **Date:** 3 November 2025
+- **URL:** https://theailyceum.com/episodes/10-conscious-ai-and-protopia.html
+- **Topics:** conscious AI, protopia, artificial general intelligence, WPP, multi-agent systems
+- **Summary:** Dr Daniel Hulme, CEO of Satalia and Chief AI Officer at WPP, UK's #1 ranked Futurist Keynote Speaker, on conscious AI, protopia and the future of intelligence. Hulme presents a vision of protopia — gradual, incremental progress — as an alternative to both utopian and dystopian framings of AI's future. The conversation covers multi-agent systems, the relationship between consciousness and intelligence, and how large organisations like WPP are approaching AI strategy at scale.
+
+### Episode 9: Can AI be green? The truth about data, power and planet
+- **Guest:** Pascal Joly, Silicon Valley technologist
+- **Date:** 27 October 2025
+- **URL:** https://theailyceum.com/episodes/9-can-ai-be-green.html
+- **Topics:** AI and environment, data centre energy, sustainable AI, green computing, power consumption
+- **Summary:** Silicon Valley technologist Pascal Joly on AI's environmental footprint, data centre energy and sustainable compute. The episode provides a technical assessment of AI's energy consumption, covering the power requirements of training and inference, the carbon footprint of data centres, and what realistic pathways to sustainable AI look like. Joly argues that the industry needs to be honest about the environmental costs of AI scaling rather than relying on vague promises of future efficiency.
+
+### Episode 8: Smartphones to AGI: how to navigate exponential change
+- **Guest:** David Wood, London Futurists
+- **Date:** 19 October 2025
+- **URL:** https://theailyceum.com/episodes/8-smartphones-to-agi.html
+- **Topics:** AGI, exponential change, futurism, London Futurists, technological acceleration
+- **Summary:** David Wood of London Futurists on navigating the exponential trajectory from smartphones to AGI. The conversation examines how to think about exponential technological change, what the smartphone revolution teaches us about AI adoption patterns, and what preparation is needed for the possibility of artificial general intelligence. Wood draws on decades of experience in the technology industry and futurism community to provide a framework for navigating uncertainty.
+
+### Episode 7: Designing AI we can trust: the right choices
+- **Guest:** Professor Claudio Pinhanez, IBM Research
+- **Date:** 13 October 2025
+- **URL:** https://theailyceum.com/episodes/7-designing-ai-we-can-trust.html
+- **Topics:** AI trust, trustworthy AI, IBM Research, human-AI interaction, design choices
+- **Summary:** Professor Claudio Pinhanez of IBM Research on designing AI systems that earn and deserve human trust. The episode examines what trustworthy AI actually means from a design perspective, covering the technical, social and organisational factors that determine whether people trust AI systems. Pinhanez argues that trust must be earned through design choices, not assumed through marketing claims, and shares research from IBM on building human-AI interaction patterns that foster appropriate trust.
+
+### Episode 6: Marketing in the age of AI
+- **Guest:** Antonis Kocheilas, Chief Transformation Officer at Ogilvy
+- **Date:** 6 October 2025
+- **URL:** https://theailyceum.com/episodes/6-marketing-in-the-age-of-ai.html
+- **Topics:** AI and marketing, Ogilvy, creativity, advertising strategy, brand transformation
+- **Summary:** Antonis Kocheilas, Chief Transformation Officer at Ogilvy, on how AI is reshaping marketing strategy and creativity. The episode examines how one of the world's largest advertising agencies is adapting to AI, what the future of creative work looks like when AI can generate copy and visuals, and how brand strategy needs to evolve. Kocheilas provides a senior industry perspective on the transformation of marketing practice by AI technologies.
+
+### Episode 5: What is the agentic internet? Virtual economies and advertising
+- **Guest:** James Bentley, agentic internet researcher
+- **Date:** 3 October 2025
+- **URL:** https://theailyceum.com/episodes/5-what-is-the-agentic-internet.html
+- **Topics:** agentic internet, virtual economies, advertising, AI agents, web evolution
+- **Summary:** James Bentley on the emerging agentic internet, virtual economies and what it means for advertising. The episode introduces the concept of the agentic internet — a web where AI agents browse, transact and negotiate on behalf of humans — and examines its implications for digital advertising, virtual economies, and the structure of the internet itself. Bentley explores how agent-to-agent commerce will create new economic models and what this means for existing business models.
+
+### Episode 4: Can robots learn? On AI, robotics and intelligence
+- **Guest:** Professor Benjamin Rosman, University of the Witwatersrand (TIME100 AI 2025)
+- **Date:** 29 September 2025
+- **URL:** https://theailyceum.com/episodes/4-can-robots-learn.html
+- **Topics:** robot learning, robotics, intelligence, TIME100 AI, machine learning
+- **Summary:** Professor Benjamin Rosman, TIME100 AI 2025 honouree, on robot learning, intelligence and the limits of AI. The conversation with one of the world's most recognised AI researchers examines what robots can actually learn, the gap between software AI and embodied AI, and what intelligence means from a robotics perspective. Rosman shares research on transfer learning in robots and discusses the fundamental challenges of creating machines that can learn and adapt in the physical world.
+
+### Episode 3: Making AI 100% sustainable: renewable data centres
+- **Guest:** GreenPT
+- **Date:** 26 September 2025
+- **URL:** https://theailyceum.com/episodes/3-making-ai-100-percent-sustainable.html
+- **Topics:** AI sustainability, renewable energy, data centres, green AI, infrastructure
+- **Summary:** GreenPT on making AI infrastructure 100% sustainable through renewable-powered data centres. The episode presents the case for fully renewable AI infrastructure, covering the current energy mix of data centres, the technical feasibility of 100% renewable compute, and the economic arguments for sustainable AI. GreenPT outlines a vision for AI development that does not compromise environmental sustainability.
+
+### Episode 2: Is AI super-intelligent? Beyond the hype
+- **Guest:** Calum Chace, best-selling AI author
+- **Date:** 17 September 2025
+- **URL:** https://theailyceum.com/episodes/2-is-ai-super-intelligent.html
+- **Topics:** superintelligence, AI hype, AI trajectory, artificial general intelligence, AI predictions
+- **Summary:** Best-selling AI author Calum Chace on superintelligence claims, hype cycles and the real trajectory of AI. The episode provides a critical examination of superintelligence narratives, separating evidence-based assessment from speculation. Chace draws on his extensive writing about AI futures to evaluate the likelihood and timeline of superintelligent AI, the dynamics of AI hype cycles, and what the actual trajectory of AI development suggests about the future.
+
+### Episode 1: Can AI become conscious?
+- **Guest:** Peter Morgan, University of Oxford
+- **Date:** 4 September 2025
+- **URL:** https://theailyceum.com/episodes/1-can-ai-become-conscious.html
+- **Topics:** AI consciousness, philosophy of mind, University of Oxford, machine consciousness, sentience
+- **Summary:** Peter Morgan of the University of Oxford on whether artificial intelligence can ever achieve consciousness. The inaugural episode of The AI Lyceum tackles one of the deepest questions in AI: can machines become conscious? Morgan examines the philosophical arguments for and against machine consciousness, what current neuroscience and AI research reveal about the nature of consciousness, and why this question matters for how we develop and regulate AI systems.
+
+## Topic Clusters
+
+### AI Ethics & Governance
+Episodes 36, 34, 33, 31, 27, 26, 22, 21, 20, 7
+
+### Agentic AI & Agents
+Episodes 37, 24, 11, 10, 5
+
+### AI & Business/Marketing
+Episodes 35, 30, 28, 25, 23, 16, 15, 12, 6
+
+### AI Infrastructure & Sustainability
+Episodes 29, 14, 9, 3, 32
+
+### AI Philosophy & Consciousness
+Episodes 19, 18, 17, 13, 10, 8, 4, 2, 1
+
+## Publications
+
+- "The AI Republic: A Dialogue" — Socratic dialogue on AI and philosophy
+- "The AI Meditations" — Marcus Aurelius-inspired meditations on AI (12 books, 208 meditations)
+- "The AI Shadow" — AI through Freud and Jung
+- "Prompt Efficiency Playbook" — Empirical research on prompt engineering
+
+## Open Source
+
+- AI Governance MCP Server — Real-time access to EU AI Act, NIST AI Framework
+- advertisingprotocols.com — Open-source ad tech protocol documentation
+
+## Social
+
+- LinkedIn: https://uk.linkedin.com/company/the-ai-lyceum
+- LinkedIn Group: https://www.linkedin.com/groups/13322112
+- YouTube: https://www.youtube.com/@The.AI.Lyceum
+- Apple Podcasts: https://podcasts.apple.com/gb/podcast/the-ai-lyceum/id1837737167
+- Spotify: https://open.spotify.com/show/034vux8EWzb9M5Gn6QDMza
+- Newsletter: https://www.linkedin.com/newsletters/the-ai-lyceum-7509283680289439745/
