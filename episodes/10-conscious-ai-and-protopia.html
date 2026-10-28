@@ -4,24 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conscious AI and protopia: the future of intelligence with Dr Daniel Hulme — The AI Lyceum Podcast, Ep. 10</title>
-    <meta name="description" content="Dr Daniel Hulme, CEO of Satalia and Chief AI Officer at WPP, on conscious AI, protopia and the future of intelligence. Episode 10 of The AI Lyceum podcast with Dr Daniel Hulme, Satalia / WPP. " />
-    <meta name="keywords" content="Conscious AI and protopia: the future of intelligence, Dr Daniel Hulme, The AI Lyceum, AI Lyceum podcast, conscious AI, protopia, artificial general intelligence, WPP, multi-agent systems, Samraj Matharu" />
+    <meta name="description" content="Dr Daniel Hulme, CEO of Satalia and Chief AI Officer at WPP, on conscious AI, protopia and the future of intelligence. Episode 10 of The AI Lyceum podcast with Dr Daniel Hulme, Satalia / WPP.  Long-form conversation on AI ethics, philosophy and governance. London, UK." />
+    <meta name="keywords" content="Conscious AI and protopia: the future of intelligence, Dr Daniel Hulme, The AI Lyceum, AI Lyceum podcast, conscious AI, protopia, artificial general intelligence, WPP, multi-agent systems, Samraj Matharu, AI ethics podcast, AI podcast London" />
     <meta property="og:title" content="Conscious AI and protopia: the future of intelligence — The AI Lyceum Podcast, Ep. 10" />
     <meta property="og:description" content="Dr Daniel Hulme, CEO of Satalia and Chief AI Officer at WPP, on conscious AI, protopia and the future of intelligence." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://theailyceum.com/episodes/10-conscious-ai-and-protopia.html" />
     <meta property="og:site_name" content="The AI Lyceum" />
-    <meta property="og:image" content="https://media.rss.com/the-ai-lyceum/20250904_110936_a722fada418428b02d5417c12a526b4e.png" />
-    <meta property="og:image:width" content="1400" />
-    <meta property="og:image:height" content="1400" />
+    <meta property="og:image" content="https://img.youtube.com/vi/x-S1FYA5Dt0/maxresdefault.jpg" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" />
     <meta property="og:image:alt" content="The AI Lyceum podcast — Conscious AI and protopia: the future of intelligence" />
+    <meta property="article:published_time" content="2025-11-03" />
+    <meta property="article:author" content="https://samrajmatharu.com" />
+    <meta property="article:section" content="Agentic AI &amp; Agents" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Conscious AI and protopia: the future of intelligence — The AI Lyceum, Ep. 10" />
     <meta name="twitter:description" content="Dr Daniel Hulme, CEO of Satalia and Chief AI Officer at WPP, on conscious AI, protopia and the future of intelligence." />
-    <meta name="twitter:image" content="https://media.rss.com/the-ai-lyceum/20250904_110936_a722fada418428b02d5417c12a526b4e.png" />
+    <meta name="twitter:image" content="https://img.youtube.com/vi/x-S1FYA5Dt0/maxresdefault.jpg" />
     <meta name="twitter:image:alt" content="The AI Lyceum podcast — Conscious AI and protopia: the future of intelligence" />
     <meta name="theme-color" content="#0C0C0E" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="geo.region" content="GB-LND" />
+    <meta name="geo.placename" content="London" />
+    <meta name="geo.position" content="51.5074;-0.1278" />
+    <meta name="ICBM" content="51.5074, -0.1278" />
     <link rel="canonical" href="https://theailyceum.com/episodes/10-conscious-ai-and-protopia.html" />
     <link rel="me" href="/llms.txt" />
     <link rel="alternate" type="application/rss+xml" title="The AI Lyceum Podcast RSS" href="https://media.rss.com/the-ai-lyceum/feed.xml" />
@@ -53,7 +60,8 @@
           "actor": {
             "@type": "Person",
             "name": "Dr Daniel Hulme",
-            "affiliation": { "@type": "Organization", "name": "Satalia / WPP" }
+            "affiliation": { "@type": "Organization", "name": "Satalia / WPP" },
+            "sameAs": ["https://satalia.com/", "https://www.linkedin.com/in/danielhulme/", "https://www.hulme.ai/"]
           },
           
           "speakable": {
@@ -83,6 +91,16 @@
               "item": "https://theailyceum.com/episodes/10-conscious-ai-and-protopia.html"
             }
           ]
+        },
+        {
+          "@type": "VideoObject",
+          "name": "Conscious AI and protopia: the future of intelligence",
+          "description": "Dr Daniel Hulme, CEO of Satalia and Chief AI Officer at WPP, on conscious AI, protopia and the future of intelligence.",
+          "thumbnailUrl": "https://img.youtube.com/vi/x-S1FYA5Dt0/maxresdefault.jpg",
+          "uploadDate": "2025-11-03",
+          "embedUrl": "https://www.youtube.com/embed/x-S1FYA5Dt0",
+          "contentUrl": "https://www.youtube.com/watch?v=x-S1FYA5Dt0",
+          "publisher": { "@id": "https://theailyceum.com/#organization" }
         }
       ]
     }
@@ -188,6 +206,26 @@
         text-transform: uppercase; letter-spacing: 0.1em;
       }
 
+      /* YouTube embed */
+      .youtube-embed {
+        margin: 0 0 24px; border-radius: 12px; overflow: hidden;
+        position: relative; background: var(--charcoal);
+      }
+      .yt-thumb-link {
+        display: block; position: relative;
+      }
+      .yt-thumb {
+        display: block; width: 100%; height: auto;
+        aspect-ratio: 16 / 9; object-fit: cover;
+        transition: opacity 0.3s;
+      }
+      .yt-thumb-link:hover .yt-thumb { opacity: 0.85; }
+      .yt-play {
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        opacity: 0.9; transition: opacity 0.3s, transform 0.3s;
+      }
+      .yt-thumb-link:hover .yt-play { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+
       /* Audio player */
       .audio-section {
         padding: 0 0 32px;
@@ -218,6 +256,18 @@
         transition: background 0.3s, color 0.3s;
       }
       .platforms a:hover { background: var(--gold); color: var(--obsidian); }
+
+      /* Guest links */
+      .guest-links {
+        display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 0;
+      }
+      .guest-links a {
+        font-size: 12px; font-weight: 600; color: var(--pewter);
+        text-decoration: none; padding: 6px 14px;
+        border: 1px solid var(--border-light); border-radius: 20px;
+        transition: border-color 0.3s, color 0.3s;
+      }
+      .guest-links a:hover { border-color: var(--gold); color: var(--gold-hover); }
 
       /* Content sections */
       .section-divider {
@@ -276,6 +326,10 @@
         display: flex; align-items: center; justify-content: center;
         background: var(--obsidian); color: var(--gold);
         font-size: 12px; font-weight: 700; border-radius: 8px; margin-top: 2px;
+      }
+      .related-thumb {
+        flex-shrink: 0; width: 120px; height: 68px; object-fit: cover;
+        border-radius: 6px; margin-top: 2px;
       }
       .related-body { flex: 1; min-width: 0; }
       .related-title {
@@ -338,6 +392,7 @@
         .site-nav a:not(.nav-brand):not(.nav-episodes) { display: none; }
         .platforms { gap: 8px; }
         .platforms a { padding: 6px 14px; font-size: 12px; }
+        .related-thumb { width: 80px; height: 45px; }
       }
     </style>
   </head>
@@ -368,6 +423,16 @@
             
             <span>Episode 10</span>
           </div>
+        </div>
+
+        <!-- YouTube video -->
+        <div class="youtube-embed">
+          <a href="https://www.youtube.com/watch?v=x-S1FYA5Dt0" target="_blank" rel="noopener noreferrer" class="yt-thumb-link" aria-label="Watch on YouTube">
+            <img src="https://img.youtube.com/vi/x-S1FYA5Dt0/hqdefault.jpg" alt="Watch Episode 10: Conscious AI and protopia: the future of intelligence on YouTube" class="yt-thumb" loading="lazy" width="480" height="360" />
+            <span class="yt-play" aria-hidden="true">
+              <svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24 27 14v20" fill="#fff"/></svg>
+            </span>
+          </a>
         </div>
 
         <!-- Audio player -->
@@ -409,7 +474,8 @@
         <!-- Guest bio -->
         <div class="guest-bio">
           <h3>About Dr Daniel Hulme</h3>
-          <p>CEO of Satalia and Chief AI Officer at WPP, UK&#x27;s #1 ranked Futurist Keynote Speaker. Dr Daniel Hulme appeared on Episode 10 of The AI Lyceum podcast, hosted by <a href="https://samrajmatharu.com">Samraj Matharu</a>.</p>
+          <p>CEO of Satalia and Chief AI Officer at WPP, co-founder of Conscium, UK&#x27;s #1 ranked Futurist Keynote Speaker. Dr Daniel Hulme appeared on Episode 10 of The AI Lyceum podcast, hosted by <a href="https://samrajmatharu.com">Samraj Matharu</a>.</p>
+          <div class="guest-links"><a href="https://satalia.com/" target="_blank" rel="noopener noreferrer">Satalia / WPP</a> <a href="https://www.linkedin.com/in/danielhulme/" target="_blank" rel="noopener noreferrer">LinkedIn</a> <a href="https://www.hulme.ai/" target="_blank" rel="noopener noreferrer">Personal site</a></div>
         </div>
 
         <div class="section-divider"></div>
@@ -419,24 +485,25 @@
           <h2>Related episodes</h2>
           <div class="related-list">
             <a class="related-item" href="/episodes/37-do-you-really-need-ai-agents.html">
+              <img src="https://img.youtube.com/vi/CvrnbNTOC98/mqdefault.jpg" alt="" class="related-thumb" loading="lazy" width="120" height="68" />
               <span class="related-num">37</span>
               <div class="related-body">
                 <p class="related-title">Do you really need AI agents?</p>
-                <p class="related-guest">Dr Quentin Reul</p>
+                <p class="related-guest">Dr Quentin Reul &middot; expert.ai</p>
               </div>
             </a>
             <a class="related-item" href="/episodes/11-agentic-ai-sora-and-gpt-5.html">
               <span class="related-num">11</span>
               <div class="related-body">
                 <p class="related-title">Agentic AI, Sora and GPT-5: trends, thoughts and tricks</p>
-                <p class="related-guest">Peter Gostev &middot; Moonpig</p>
+                <p class="related-guest">Peter Gostev &middot; Arena</p>
               </div>
             </a>
             <a class="related-item" href="/episodes/5-what-is-the-agentic-internet.html">
               <span class="related-num">5</span>
               <div class="related-body">
                 <p class="related-title">What is the agentic internet? Virtual economies and advertising</p>
-                <p class="related-guest">James Bentley</p>
+                <p class="related-guest">James Bentley &middot; Numerical</p>
               </div>
             </a>
           </div>

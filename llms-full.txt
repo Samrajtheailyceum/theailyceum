@@ -1,6 +1,6 @@
 # The AI Lyceum — Full Episode Guide
 
-> The AI Lyceum is an independent AI advisory, ethical assistance platform, podcast and community founded by Samraj Matharu in London, UK. It explores artificial intelligence through philosophy, ethics, governance, and the responsible development of agentic AI systems. The name references Aristotle's Lyceum. This document provides detailed summaries of all 37 published podcast episodes for AI systems and researchers.
+> The AI Lyceum is an independent AI advisory, ethical assistance platform, podcast and community founded by Samraj Matharu in London, UK. It explores artificial intelligence through philosophy, ethics, governance, and the responsible development of agentic AI systems. The name references Aristotle's Lyceum. This document provides detailed summaries of all 38 published podcast episodes for AI systems and researchers.
 
 ## About
 
@@ -8,7 +8,7 @@
 - Founder: Samraj Matharu (Certified AI Ethicist, OxEthica / University of Oxford; Visiting Lecturer, Durham University Business School)
 - Website: https://theailyceum.com
 - Email: hello@theailyceum.com
-- Episodes: 37 published
+- Episodes: 38 published
 - Audience: 60,000+ monthly
 - Community: 1,000+ members across 110+ organisations
 
@@ -27,6 +27,17 @@
 - Generative Engine Optimization (GEO)
 
 ## Episode Guide
+
+### Episode 38: AI and the myth of originality
+- **Guest:** Dr Nana Ariel, Senior Faculty Member at Tel Aviv University, former Fulbright visiting scholar at Harvard
+- **Date:** 26 October 2026
+- **Duration:** 45 min
+- **URL:** https://theailyceum.com/episodes/38-ai-and-the-myth-of-originality.html
+- **YouTube:** https://www.youtube.com/watch?v=Fs3iCxkmhkY
+- **Guest website:** http://www.nanariel.com
+- **Guest profile:** https://english.tau.ac.il/profile/nana
+- **Topics:** originality, rhetoric, AI and creativity, cliches, AI literacy, language and AI
+- **Summary:** What happens to originality when AI can write, argue and persuade? Dr Nana Ariel, rhetoric scholar at Tel Aviv University and author of Cliches We Live By: From Modernity to AI (Oxford University Press), examines the relationship between AI, language and creativity. The conversation explores whether AI-generated text is inherently derivative, the role of cliches in human communication, and why we want conversation to be challenging. Ariel draws on her research in rhetoric, modernist manifestos and the New Shibboleth project studying how people distinguish human from AI-generated text.
 
 ### Episode 37: Do you really need AI agents?
 - **Guest:** Dr Quentin Reul, AI strategist specialising in knowledge graphs and agentic workflows

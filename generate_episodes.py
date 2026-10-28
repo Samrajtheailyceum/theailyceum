@@ -5,6 +5,7 @@ import json
 import os
 from datetime import datetime
 from html import escape
+from urllib.parse import quote
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 EPISODES_DIR = os.path.join(SCRIPT_DIR, "episodes")
@@ -41,8 +42,84 @@ def generate_audio_player(ep):
     )
 
 
+def generate_youtube_embed(ep):
+    """Generate YouTube video embed or thumbnail link."""
+    yt_id = ep.get("youtubeId", "")
+    if yt_id:
+        return (
+            f'<div class="youtube-embed">\n'
+            f'          <a href="https://www.youtube.com/watch?v={yt_id}" target="_blank" rel="noopener noreferrer" class="yt-thumb-link" aria-label="Watch on YouTube">\n'
+            f'            <img src="https://img.youtube.com/vi/{yt_id}/hqdefault.jpg" alt="Watch Episode {ep["num"]}: {escape(ep["title"])} on YouTube" class="yt-thumb" loading="lazy" width="480" height="360" />\n'
+            f'            <span class="yt-play" aria-hidden="true">\n'
+            f'              <svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24 27 14v20" fill="#fff"/></svg>\n'
+            f'            </span>\n'
+            f'          </a>\n'
+            f'        </div>'
+        )
+    return ""
+
+
+def generate_guest_links(ep):
+    """Generate guest affiliation and profile links."""
+    links = []
+    guest_url = ep.get("guestUrl", "")
+    guest_linkedin = ep.get("guestLinkedin", "")
+    guest_website = ep.get("guestWebsite", "")
+
+    if guest_url:
+        label = ep["affiliation"] if ep["affiliation"] else "Website"
+        links.append(f'<a href="{escape(guest_url)}" target="_blank" rel="noopener noreferrer">{escape(label)}</a>')
+    if guest_linkedin:
+        links.append(f'<a href="{escape(guest_linkedin)}" target="_blank" rel="noopener noreferrer">LinkedIn</a>')
+    if guest_website and guest_website != guest_url:
+        links.append(f'<a href="{escape(guest_website)}" target="_blank" rel="noopener noreferrer">Personal site</a>')
+
+    if links:
+        return '<div class="guest-links">' + " ".join(links) + '</div>'
+    return ""
+
+
+def generate_guest_schema(ep):
+    """Generate enhanced guest Person schema with sameAs links."""
+    same_as = []
+    guest_url = ep.get("guestUrl", "")
+    guest_linkedin = ep.get("guestLinkedin", "")
+    guest_website = ep.get("guestWebsite", "")
+    if guest_url:
+        same_as.append(f'"{guest_url}"')
+    if guest_linkedin:
+        same_as.append(f'"{guest_linkedin}"')
+    if guest_website and guest_website != guest_url:
+        same_as.append(f'"{guest_website}"')
+
+    same_as_json = ""
+    if same_as:
+        same_as_json = ',\n            "sameAs": [' + ", ".join(same_as) + ']'
+
+    return same_as_json
+
+
+def generate_video_schema(ep):
+    """Generate VideoObject JSON-LD for episodes with YouTube videos."""
+    yt_id = ep.get("youtubeId", "")
+    if not yt_id:
+        return ""
+    return (
+        f',\n        {{\n'
+        f'          "@type": "VideoObject",\n'
+        f'          "name": "{ep["title"]}",\n'
+        f'          "description": "{ep["description"]}",\n'
+        f'          "thumbnailUrl": "https://img.youtube.com/vi/{yt_id}/maxresdefault.jpg",\n'
+        f'          "uploadDate": "{ep["date"]}",\n'
+        f'          "embedUrl": "https://www.youtube.com/embed/{yt_id}",\n'
+        f'          "contentUrl": "https://www.youtube.com/watch?v={yt_id}",\n'
+        f'          "publisher": {{ "@id": "https://theailyceum.com/#organization" }}\n'
+        f'        }}'
+    )
+
+
 def generate_related_episodes(ep, lookup):
-    """Generate HTML for related episode links."""
+    """Generate HTML for related episode links with YouTube thumbnails."""
     items = []
     for rel_num in ep.get("relatedEpisodes", [])[:3]:
         rel = lookup.get(rel_num)
@@ -51,9 +128,20 @@ def generate_related_episodes(ep, lookup):
         guest_display = escape(rel["guest"])
         if rel["affiliation"]:
             guest_display += f' &middot; {escape(rel["affiliation"])}'
+
+        yt_id = rel.get("youtubeId", "")
+        thumb_html = ""
+        if yt_id:
+            thumb_html = (
+                f'<img src="https://img.youtube.com/vi/{yt_id}/mqdefault.jpg" '
+                f'alt="" class="related-thumb" loading="lazy" width="120" height="68" />\n'
+                f'              '
+            )
+
         items.append(
             f'<a class="related-item" href="/episodes/{rel["slug"]}.html">\n'
-            f'              <span class="related-num">{rel["num"]}</span>\n'
+            f'              {thumb_html}'
+            f'<span class="related-num">{rel["num"]}</span>\n'
             f'              <div class="related-body">\n'
             f'                <p class="related-title">{escape(rel["title"])}</p>\n'
             f'                <p class="related-guest">{guest_display}</p>\n'
@@ -122,8 +210,20 @@ def render_episode(template, ep, lookup):
         html = html.replace("{{DURATION_DISPLAY}}", "")
         html = html.replace("{{DURATION_JSON}}", "")
 
+    # YouTube embed
+    html = html.replace("{{YOUTUBE_EMBED}}", generate_youtube_embed(ep))
+
     # Audio player
     html = html.replace("{{AUDIO_PLAYER}}", generate_audio_player(ep))
+
+    # Guest links
+    html = html.replace("{{GUEST_LINKS}}", generate_guest_links(ep))
+
+    # Guest schema sameAs
+    html = html.replace("{{GUEST_SAMEAS}}", generate_guest_schema(ep))
+
+    # Video schema
+    html = html.replace("{{VIDEO_SCHEMA}}", generate_video_schema(ep))
 
     # Media JSON-LD
     if ep["mp3Url"]:
@@ -134,6 +234,17 @@ def render_episode(template, ep, lookup):
     else:
         html = html.replace("{{MEDIA_JSON}}", "")
 
+    # OG image: use YouTube thumbnail if available, else default podcast cover
+    yt_id = ep.get("youtubeId", "")
+    if yt_id:
+        html = html.replace("{{OG_IMAGE}}", f"https://img.youtube.com/vi/{yt_id}/maxresdefault.jpg")
+        html = html.replace("{{OG_IMAGE_WIDTH}}", "1280")
+        html = html.replace("{{OG_IMAGE_HEIGHT}}", "720")
+    else:
+        html = html.replace("{{OG_IMAGE}}", "https://media.rss.com/the-ai-lyceum/20250904_110936_a722fada418428b02d5417c12a526b4e.png")
+        html = html.replace("{{OG_IMAGE_WIDTH}}", "1400")
+        html = html.replace("{{OG_IMAGE_HEIGHT}}", "1400")
+
     # Topics
     html = html.replace("{{TOPICS_LIST}}", generate_topics_list(ep["topics"]))
     html = html.replace("{{TOPICS_META}}", ", ".join(ep["topics"]))
@@ -141,22 +252,44 @@ def render_episode(template, ep, lookup):
     # Related episodes
     html = html.replace("{{RELATED_EPISODES}}", generate_related_episodes(ep, lookup))
 
+    # Cluster
+    html = html.replace("{{CLUSTER}}", escape(ep.get("cluster", "")))
+
     return html
 
 
 def generate_episodes_index(episodes):
-    """Generate the episodes/index.html listing page."""
+    """Generate the episodes/index.html listing page with YouTube thumbnails."""
     episode_items = []
     for ep in episodes:
         guest_display = escape(ep["guest"])
         if ep["affiliation"]:
             guest_display += f' <span style="color:var(--muted);font-weight:400">&middot; {escape(ep["affiliation"])}</span>'
+
+        yt_id = ep.get("youtubeId", "")
+        thumb_html = ""
+        if yt_id:
+            thumb_html = (
+                f'<a href="https://www.youtube.com/watch?v={yt_id}" target="_blank" rel="noopener noreferrer" class="ep-thumb-link" aria-label="Watch on YouTube">\n'
+                f'                <img src="https://img.youtube.com/vi/{yt_id}/mqdefault.jpg" alt="" class="ep-thumb" loading="lazy" width="168" height="94" />\n'
+                f'                <span class="ep-thumb-play" aria-hidden="true"><svg viewBox="0 0 68 48" width="34" height="24"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24 27 14v20" fill="#fff"/></svg></span>\n'
+                f'              </a>\n'
+                f'              '
+            )
+
+        # Guest link
+        guest_url = ep.get("guestUrl", "")
+        affiliation_link = ""
+        if guest_url and ep["affiliation"]:
+            affiliation_link = f' <a href="{escape(guest_url)}" target="_blank" rel="noopener noreferrer" style="color:var(--gold-hover);text-decoration:none;font-weight:400;font-size:12px">{escape(ep["affiliation"])} &nearr;</a>'
+
         episode_items.append(
             f'<li class="episode-item">\n'
-            f'              <span class="ep-num">{ep["num"]}</span>\n'
+            f'              {thumb_html}'
+            f'<span class="ep-num">{ep["num"]}</span>\n'
             f'              <div class="ep-body">\n'
             f'                <h3 class="ep-title"><a href="/episodes/{ep["slug"]}.html" style="color:inherit;text-decoration:none">{escape(ep["title"])}</a></h3>\n'
-            f'                <p class="ep-guest"><strong>{guest_display}</strong></p>\n'
+            f'                <p class="ep-guest"><strong>{guest_display}</strong>{affiliation_link}</p>\n'
             f'                <p class="ep-date">{format_date_display(ep["date"])}</p>\n'
             f'                <div class="ep-links-row" style="display:flex;gap:12px;margin-top:6px">\n'
             f'                  <a class="ep-listen" href="/episodes/{ep["slug"]}.html">Show notes &rarr;</a>\n'
@@ -175,25 +308,33 @@ def generate_episodes_index(episodes):
         )
     json_list = ",\n            ".join(json_items)
 
+    # Collect all guest names for meta keywords
+    guest_names = ", ".join(ep["guest"] for ep in episodes)
+
     return f'''<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>All Episodes — The AI Lyceum Podcast</title>
-    <meta name="description" content="All 37 episodes of The AI Lyceum podcast. Long-form conversations on AI ethics, agentic AI, philosophy and governance with researchers from Google DeepMind, Cerebras, IBM Research, UC Berkeley and more. Founded by Samraj Matharu." />
+    <title>All Episodes — The AI Lyceum Podcast | AI Ethics, Agentic AI & Philosophy</title>
+    <meta name="description" content="All {len(episodes)} episodes of The AI Lyceum podcast. Long-form conversations on AI ethics, agentic AI, philosophy and governance with researchers from Google DeepMind, Cerebras, IBM Research, UC Berkeley, Tel Aviv University, UCL, Oxford and more. Founded by Samraj Matharu in London, UK." />
+    <meta name="keywords" content="The AI Lyceum podcast, AI podcast episodes, AI ethics podcast, agentic AI podcast, {guest_names}, Samraj Matharu, AI philosophy, AI governance, London AI podcast" />
     <meta property="og:title" content="All Episodes — The AI Lyceum Podcast" />
-    <meta property="og:description" content="All 37 episodes. Long-form conversations on AI ethics, agentic AI, philosophy and governance." />
+    <meta property="og:description" content="All {len(episodes)} episodes. Long-form conversations on AI ethics, agentic AI, philosophy and governance." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://theailyceum.com/episodes/" />
     <meta property="og:site_name" content="The AI Lyceum" />
     <meta property="og:image" content="https://media.rss.com/the-ai-lyceum/20250904_110936_a722fada418428b02d5417c12a526b4e.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="All Episodes — The AI Lyceum Podcast" />
-    <meta name="twitter:description" content="All 37 episodes. Long-form conversations on AI ethics, agentic AI, philosophy and governance." />
+    <meta name="twitter:description" content="All {len(episodes)} episodes. Long-form conversations on AI ethics, agentic AI, philosophy and governance." />
     <meta name="twitter:image" content="https://media.rss.com/the-ai-lyceum/20250904_110936_a722fada418428b02d5417c12a526b4e.png" />
     <meta name="theme-color" content="#0C0C0E" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="geo.region" content="GB-LND" />
+    <meta name="geo.placename" content="London" />
+    <meta name="geo.position" content="51.5074;-0.1278" />
+    <meta name="ICBM" content="51.5074, -0.1278" />
     <link rel="canonical" href="https://theailyceum.com/episodes/" />
     <link rel="me" href="/llms.txt" />
     <meta name="google-site-verification" content="REPLACE_WITH_GSC_CODE" />
@@ -244,7 +385,7 @@ def generate_episodes_index(episodes):
         color: var(--ink); line-height: 1.6; min-height: 100vh;
         display: flex; flex-direction: column;
       }}
-      .wrap {{ max-width: 760px; margin: 0 auto; padding: 0 24px; width: 100%; }}
+      .wrap {{ max-width: 820px; margin: 0 auto; padding: 0 24px; width: 100%; }}
       .site-nav {{
         position: sticky; top: 0; z-index: 100; height: 56px;
         display: flex; align-items: center; justify-content: center; gap: 32px;
@@ -294,6 +435,20 @@ def generate_episodes_index(episodes):
         background: var(--obsidian); color: var(--gold);
         font-size: 13px; font-weight: 700; border-radius: 8px; margin-top: 2px;
       }}
+      .ep-thumb-link {{
+        flex-shrink: 0; position: relative; display: block;
+        border-radius: 8px; overflow: hidden; margin-top: 2px;
+      }}
+      .ep-thumb {{
+        display: block; width: 168px; height: 94px; object-fit: cover;
+        border-radius: 8px; transition: opacity 0.3s;
+      }}
+      .ep-thumb-link:hover .ep-thumb {{ opacity: 0.85; }}
+      .ep-thumb-play {{
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        opacity: 0.85; transition: opacity 0.3s;
+      }}
+      .ep-thumb-link:hover .ep-thumb-play {{ opacity: 1; }}
       .ep-body {{ flex: 1; min-width: 0; }}
       .ep-title {{
         font-family: var(--font-display); font-size: 18px;
@@ -333,6 +488,7 @@ def generate_episodes_index(episodes):
         .site-nav {{ gap: 16px; }}
         .site-nav a:not(.nav-brand):not(.nav-episodes) {{ display: none; }}
         .ep-num {{ width: 32px; height: 32px; font-size: 11px; }}
+        .ep-thumb {{ width: 120px; height: 68px; }}
       }}
     </style>
   </head>
@@ -353,7 +509,7 @@ def generate_episodes_index(episodes):
 
         <div class="page-header">
           <h1>All episodes</h1>
-          <p>37 long-form conversations on AI ethics, agentic AI, philosophy and governance. Guests include researchers from Google DeepMind, Cerebras, IBM Research, UC Berkeley, UCL, Kellogg and more. Founded by <a href="https://samrajmatharu.com">Samraj Matharu</a>.</p>
+          <p>{len(episodes)} long-form conversations on AI ethics, agentic AI, philosophy and governance. Guests include researchers from Google DeepMind, Cerebras, IBM Research, Tel Aviv University, UC Berkeley, UCL, Oxford, Kellogg and more. Founded by <a href="https://samrajmatharu.com">Samraj Matharu</a>.</p>
         </div>
 
         <ol class="episode-list" reversed>

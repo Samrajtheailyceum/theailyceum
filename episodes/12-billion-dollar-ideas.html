@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Billion dollar ideas: AI’s impact on the digital economy with Brian O’Kelley — The AI Lyceum Podcast, Ep. 12</title>
-    <meta name="description" content="Brian O&#x27;Kelley, CEO of Scope3 (now Founder of Spostra), on AI&#x27;s transformative impact on the digital advertising economy. Episode 12 of The AI Lyceum podcast with Brian O’Kelley, Scope3. " />
-    <meta name="keywords" content="Billion dollar ideas: AI’s impact on the digital economy, Brian O’Kelley, The AI Lyceum, AI Lyceum podcast, digital economy, advertising, Scope3, sustainability, ad tech, Samraj Matharu" />
+    <meta name="description" content="Brian O’Kelley, CEO of Apostra (formerly Scope3), on AI&#x27;s transformative impact on the digital advertising economy. Episode 12 of The AI Lyceum podcast with Brian O’Kelley, Apostra.  Long-form conversation on AI ethics, philosophy and governance. London, UK." />
+    <meta name="keywords" content="Billion dollar ideas: AI’s impact on the digital economy, Brian O’Kelley, The AI Lyceum, AI Lyceum podcast, digital economy, advertising, Scope3, sustainability, ad tech, Samraj Matharu, AI ethics podcast, AI podcast London" />
     <meta property="og:title" content="Billion dollar ideas: AI’s impact on the digital economy — The AI Lyceum Podcast, Ep. 12" />
-    <meta property="og:description" content="Brian O&#x27;Kelley, CEO of Scope3 (now Founder of Spostra), on AI&#x27;s transformative impact on the digital advertising economy." />
+    <meta property="og:description" content="Brian O’Kelley, CEO of Apostra (formerly Scope3), on AI&#x27;s transformative impact on the digital advertising economy." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://theailyceum.com/episodes/12-billion-dollar-ideas.html" />
     <meta property="og:site_name" content="The AI Lyceum" />
@@ -15,13 +15,20 @@
     <meta property="og:image:width" content="1400" />
     <meta property="og:image:height" content="1400" />
     <meta property="og:image:alt" content="The AI Lyceum podcast — Billion dollar ideas: AI’s impact on the digital economy" />
+    <meta property="article:published_time" content="2025-11-16" />
+    <meta property="article:author" content="https://samrajmatharu.com" />
+    <meta property="article:section" content="AI &amp; Business/Marketing" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Billion dollar ideas: AI’s impact on the digital economy — The AI Lyceum, Ep. 12" />
-    <meta name="twitter:description" content="Brian O&#x27;Kelley, CEO of Scope3 (now Founder of Spostra), on AI&#x27;s transformative impact on the digital advertising economy." />
+    <meta name="twitter:description" content="Brian O’Kelley, CEO of Apostra (formerly Scope3), on AI&#x27;s transformative impact on the digital advertising economy." />
     <meta name="twitter:image" content="https://media.rss.com/the-ai-lyceum/20250904_110936_a722fada418428b02d5417c12a526b4e.png" />
     <meta name="twitter:image:alt" content="The AI Lyceum podcast — Billion dollar ideas: AI’s impact on the digital economy" />
     <meta name="theme-color" content="#0C0C0E" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="geo.region" content="GB-LND" />
+    <meta name="geo.placename" content="London" />
+    <meta name="geo.position" content="51.5074;-0.1278" />
+    <meta name="ICBM" content="51.5074, -0.1278" />
     <link rel="canonical" href="https://theailyceum.com/episodes/12-billion-dollar-ideas.html" />
     <link rel="me" href="/llms.txt" />
     <link rel="alternate" type="application/rss+xml" title="The AI Lyceum Podcast RSS" href="https://media.rss.com/the-ai-lyceum/feed.xml" />
@@ -38,7 +45,7 @@
           "@type": "PodcastEpisode",
           "@id": "https://theailyceum.com/episodes/12-billion-dollar-ideas.html#episode",
           "name": "Billion dollar ideas: AI’s impact on the digital economy",
-          "description": "Brian O&#x27;Kelley, CEO of Scope3 (now Founder of Spostra), on AI&#x27;s transformative impact on the digital advertising economy.",
+          "description": "Brian O’Kelley, CEO of Apostra (formerly Scope3), on AI&#x27;s transformative impact on the digital advertising economy.",
           "episodeNumber": 12,
           "datePublished": "2025-11-16",
           
@@ -53,7 +60,8 @@
           "actor": {
             "@type": "Person",
             "name": "Brian O’Kelley",
-            "affiliation": { "@type": "Organization", "name": "Scope3" }
+            "affiliation": { "@type": "Organization", "name": "Apostra" },
+            "sameAs": ["https://apostra.com/", "https://www.linkedin.com/in/brianokelley/"]
           },
           
           "speakable": {
@@ -188,6 +196,26 @@
         text-transform: uppercase; letter-spacing: 0.1em;
       }
 
+      /* YouTube embed */
+      .youtube-embed {
+        margin: 0 0 24px; border-radius: 12px; overflow: hidden;
+        position: relative; background: var(--charcoal);
+      }
+      .yt-thumb-link {
+        display: block; position: relative;
+      }
+      .yt-thumb {
+        display: block; width: 100%; height: auto;
+        aspect-ratio: 16 / 9; object-fit: cover;
+        transition: opacity 0.3s;
+      }
+      .yt-thumb-link:hover .yt-thumb { opacity: 0.85; }
+      .yt-play {
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        opacity: 0.9; transition: opacity 0.3s, transform 0.3s;
+      }
+      .yt-thumb-link:hover .yt-play { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+
       /* Audio player */
       .audio-section {
         padding: 0 0 32px;
@@ -218,6 +246,18 @@
         transition: background 0.3s, color 0.3s;
       }
       .platforms a:hover { background: var(--gold); color: var(--obsidian); }
+
+      /* Guest links */
+      .guest-links {
+        display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 0;
+      }
+      .guest-links a {
+        font-size: 12px; font-weight: 600; color: var(--pewter);
+        text-decoration: none; padding: 6px 14px;
+        border: 1px solid var(--border-light); border-radius: 20px;
+        transition: border-color 0.3s, color 0.3s;
+      }
+      .guest-links a:hover { border-color: var(--gold); color: var(--gold-hover); }
 
       /* Content sections */
       .section-divider {
@@ -276,6 +316,10 @@
         display: flex; align-items: center; justify-content: center;
         background: var(--obsidian); color: var(--gold);
         font-size: 12px; font-weight: 700; border-radius: 8px; margin-top: 2px;
+      }
+      .related-thumb {
+        flex-shrink: 0; width: 120px; height: 68px; object-fit: cover;
+        border-radius: 6px; margin-top: 2px;
       }
       .related-body { flex: 1; min-width: 0; }
       .related-title {
@@ -338,6 +382,7 @@
         .site-nav a:not(.nav-brand):not(.nav-episodes) { display: none; }
         .platforms { gap: 8px; }
         .platforms a { padding: 6px 14px; font-size: 12px; }
+        .related-thumb { width: 80px; height: 45px; }
       }
     </style>
   </head>
@@ -362,13 +407,16 @@
           <span class="ep-number">12</span>
           <h1>Billion dollar ideas: AI’s impact on the digital economy</h1>
           <p class="ep-guest-name">Brian O’Kelley</p>
-          <p class="ep-guest-affiliation">Scope3</p>
+          <p class="ep-guest-affiliation">Apostra</p>
           <div class="ep-meta">
             <span>16 November 2025</span>
             
             <span>Episode 12</span>
           </div>
         </div>
+
+        <!-- YouTube video -->
+        
 
         <!-- Audio player -->
         <div class="audio-section">
@@ -387,7 +435,7 @@
         <!-- Show notes -->
         <div class="content-section">
           <h2>Show notes</h2>
-          <p class="ep-show-notes">Brian O&#x27;Kelley, CEO of Scope3 (now Founder of Spostra), on AI&#x27;s transformative impact on the digital advertising economy.</p>
+          <p class="ep-show-notes">Brian O’Kelley, CEO of Apostra (formerly Scope3), on AI&#x27;s transformative impact on the digital advertising economy.</p>
         </div>
 
         <div class="section-divider"></div>
@@ -409,7 +457,8 @@
         <!-- Guest bio -->
         <div class="guest-bio">
           <h3>About Brian O’Kelley</h3>
-          <p>CEO of Scope3 (now Founder of Spostra), pioneer in digital advertising and sustainability. Brian O’Kelley appeared on Episode 12 of The AI Lyceum podcast, hosted by <a href="https://samrajmatharu.com">Samraj Matharu</a>.</p>
+          <p>CEO and Co-Founder of Apostra (formerly Scope3), pioneer in digital advertising, previously co-founded AppNexus (sold to AT&amp;T for $1.6B). Brian O’Kelley appeared on Episode 12 of The AI Lyceum podcast, hosted by <a href="https://samrajmatharu.com">Samraj Matharu</a>.</p>
+          <div class="guest-links"><a href="https://apostra.com/" target="_blank" rel="noopener noreferrer">Apostra</a> <a href="https://www.linkedin.com/in/brianokelley/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
         </div>
 
         <div class="section-divider"></div>
@@ -419,17 +468,19 @@
           <h2>Related episodes</h2>
           <div class="related-list">
             <a class="related-item" href="/episodes/30-ai-and-the-new-economics-of-advertising.html">
+              <img src="https://img.youtube.com/vi/D1qDtnnIqzc/mqdefault.jpg" alt="" class="related-thumb" loading="lazy" width="120" height="68" />
               <span class="related-num">30</span>
               <div class="related-body">
                 <p class="related-title">AI and the new economics of advertising</p>
-                <p class="related-guest">Ian Whittaker</p>
+                <p class="related-guest">Ian Whittaker &middot; Liberty Sky Advisors</p>
               </div>
             </a>
             <a class="related-item" href="/episodes/28-how-advertising-ai-and-algorithms-shape-what-we-see.html">
+              <img src="https://img.youtube.com/vi/gd34FMkl2pE/mqdefault.jpg" alt="" class="related-thumb" loading="lazy" width="120" height="68" />
               <span class="related-num">28</span>
               <div class="related-body">
                 <p class="related-title">How advertising, AI and algorithms shape what we see</p>
-                <p class="related-guest">Alessandra Di Lorenzo</p>
+                <p class="related-guest">Alessandra Di Lorenzo &middot; LM Forward</p>
               </div>
             </a>
             <a class="related-item" href="/episodes/24-agentic-advertising.html">

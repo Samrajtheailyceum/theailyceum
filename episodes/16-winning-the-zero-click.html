@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Winning the zero click: AI and marketing’s future with Professor Jim Lecinski — The AI Lyceum Podcast, Ep. 16</title>
-    <meta name="description" content="Professor Jim Lecinski of Kellogg on how AI raises the ceiling and the floor for marketing. Episode 16 of The AI Lyceum podcast with Professor Jim Lecinski, Kellogg School of Management. " />
-    <meta name="keywords" content="Winning the zero click: AI and marketing’s future, Professor Jim Lecinski, The AI Lyceum, AI Lyceum podcast, zero-click search, AI marketing, Kellogg, SEO, digital marketing, Samraj Matharu" />
+    <meta name="description" content="Professor Jim Lecinski of Kellogg on how AI raises the ceiling and the floor for marketing. Episode 16 of The AI Lyceum podcast with Professor Jim Lecinski, Kellogg School of Management.  Long-form conversation on AI ethics, philosophy and governance. London, UK." />
+    <meta name="keywords" content="Winning the zero click: AI and marketing’s future, Professor Jim Lecinski, The AI Lyceum, AI Lyceum podcast, zero-click search, AI marketing, Kellogg, SEO, digital marketing, Samraj Matharu, AI ethics podcast, AI podcast London" />
     <meta property="og:title" content="Winning the zero click: AI and marketing’s future — The AI Lyceum Podcast, Ep. 16" />
     <meta property="og:description" content="Professor Jim Lecinski of Kellogg on how AI raises the ceiling and the floor for marketing." />
     <meta property="og:type" content="article" />
@@ -15,6 +15,9 @@
     <meta property="og:image:width" content="1400" />
     <meta property="og:image:height" content="1400" />
     <meta property="og:image:alt" content="The AI Lyceum podcast — Winning the zero click: AI and marketing’s future" />
+    <meta property="article:published_time" content="2025-12-11" />
+    <meta property="article:author" content="https://samrajmatharu.com" />
+    <meta property="article:section" content="AI &amp; Business/Marketing" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Winning the zero click: AI and marketing’s future — The AI Lyceum, Ep. 16" />
     <meta name="twitter:description" content="Professor Jim Lecinski of Kellogg on how AI raises the ceiling and the floor for marketing." />
@@ -22,6 +25,10 @@
     <meta name="twitter:image:alt" content="The AI Lyceum podcast — Winning the zero click: AI and marketing’s future" />
     <meta name="theme-color" content="#0C0C0E" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="geo.region" content="GB-LND" />
+    <meta name="geo.placename" content="London" />
+    <meta name="geo.position" content="51.5074;-0.1278" />
+    <meta name="ICBM" content="51.5074, -0.1278" />
     <link rel="canonical" href="https://theailyceum.com/episodes/16-winning-the-zero-click.html" />
     <link rel="me" href="/llms.txt" />
     <link rel="alternate" type="application/rss+xml" title="The AI Lyceum Podcast RSS" href="https://media.rss.com/the-ai-lyceum/feed.xml" />
@@ -53,7 +60,8 @@
           "actor": {
             "@type": "Person",
             "name": "Professor Jim Lecinski",
-            "affiliation": { "@type": "Organization", "name": "Kellogg School of Management" }
+            "affiliation": { "@type": "Organization", "name": "Kellogg School of Management" },
+            "sameAs": ["https://www.kellogg.northwestern.edu/", "https://www.linkedin.com/in/jimlecinski/"]
           },
           
           "speakable": {
@@ -188,6 +196,26 @@
         text-transform: uppercase; letter-spacing: 0.1em;
       }
 
+      /* YouTube embed */
+      .youtube-embed {
+        margin: 0 0 24px; border-radius: 12px; overflow: hidden;
+        position: relative; background: var(--charcoal);
+      }
+      .yt-thumb-link {
+        display: block; position: relative;
+      }
+      .yt-thumb {
+        display: block; width: 100%; height: auto;
+        aspect-ratio: 16 / 9; object-fit: cover;
+        transition: opacity 0.3s;
+      }
+      .yt-thumb-link:hover .yt-thumb { opacity: 0.85; }
+      .yt-play {
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        opacity: 0.9; transition: opacity 0.3s, transform 0.3s;
+      }
+      .yt-thumb-link:hover .yt-play { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+
       /* Audio player */
       .audio-section {
         padding: 0 0 32px;
@@ -218,6 +246,18 @@
         transition: background 0.3s, color 0.3s;
       }
       .platforms a:hover { background: var(--gold); color: var(--obsidian); }
+
+      /* Guest links */
+      .guest-links {
+        display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 0;
+      }
+      .guest-links a {
+        font-size: 12px; font-weight: 600; color: var(--pewter);
+        text-decoration: none; padding: 6px 14px;
+        border: 1px solid var(--border-light); border-radius: 20px;
+        transition: border-color 0.3s, color 0.3s;
+      }
+      .guest-links a:hover { border-color: var(--gold); color: var(--gold-hover); }
 
       /* Content sections */
       .section-divider {
@@ -276,6 +316,10 @@
         display: flex; align-items: center; justify-content: center;
         background: var(--obsidian); color: var(--gold);
         font-size: 12px; font-weight: 700; border-radius: 8px; margin-top: 2px;
+      }
+      .related-thumb {
+        flex-shrink: 0; width: 120px; height: 68px; object-fit: cover;
+        border-radius: 6px; margin-top: 2px;
       }
       .related-body { flex: 1; min-width: 0; }
       .related-title {
@@ -338,6 +382,7 @@
         .site-nav a:not(.nav-brand):not(.nav-episodes) { display: none; }
         .platforms { gap: 8px; }
         .platforms a { padding: 6px 14px; font-size: 12px; }
+        .related-thumb { width: 80px; height: 45px; }
       }
     </style>
   </head>
@@ -369,6 +414,9 @@
             <span>Episode 16</span>
           </div>
         </div>
+
+        <!-- YouTube video -->
+        
 
         <!-- Audio player -->
         <div class="audio-section">
@@ -409,7 +457,8 @@
         <!-- Guest bio -->
         <div class="guest-bio">
           <h3>About Professor Jim Lecinski</h3>
-          <p>Professor at Kellogg School of Management on AI&#x27;s impact on marketing and zero-click search. Professor Jim Lecinski appeared on Episode 16 of The AI Lyceum podcast, hosted by <a href="https://samrajmatharu.com">Samraj Matharu</a>.</p>
+          <p>Clinical Professor of Marketing at Kellogg School of Management, Northwestern University, former Google VP, author of The AI Marketing Canvas. Professor Jim Lecinski appeared on Episode 16 of The AI Lyceum podcast, hosted by <a href="https://samrajmatharu.com">Samraj Matharu</a>.</p>
+          <div class="guest-links"><a href="https://www.kellogg.northwestern.edu/" target="_blank" rel="noopener noreferrer">Kellogg School of Management</a> <a href="https://www.linkedin.com/in/jimlecinski/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
         </div>
 
         <div class="section-divider"></div>
@@ -419,6 +468,7 @@
           <h2>Related episodes</h2>
           <div class="related-list">
             <a class="related-item" href="/episodes/35-how-ai-is-changing-business.html">
+              <img src="https://img.youtube.com/vi/E2geEdpKU2Q/mqdefault.jpg" alt="" class="related-thumb" loading="lazy" width="120" height="68" />
               <span class="related-num">35</span>
               <div class="related-body">
                 <p class="related-title">How AI is changing business — and the human skills that still matter</p>
@@ -426,17 +476,19 @@
               </div>
             </a>
             <a class="related-item" href="/episodes/30-ai-and-the-new-economics-of-advertising.html">
+              <img src="https://img.youtube.com/vi/D1qDtnnIqzc/mqdefault.jpg" alt="" class="related-thumb" loading="lazy" width="120" height="68" />
               <span class="related-num">30</span>
               <div class="related-body">
                 <p class="related-title">AI and the new economics of advertising</p>
-                <p class="related-guest">Ian Whittaker</p>
+                <p class="related-guest">Ian Whittaker &middot; Liberty Sky Advisors</p>
               </div>
             </a>
             <a class="related-item" href="/episodes/28-how-advertising-ai-and-algorithms-shape-what-we-see.html">
+              <img src="https://img.youtube.com/vi/gd34FMkl2pE/mqdefault.jpg" alt="" class="related-thumb" loading="lazy" width="120" height="68" />
               <span class="related-num">28</span>
               <div class="related-body">
                 <p class="related-title">How advertising, AI and algorithms shape what we see</p>
-                <p class="related-guest">Alessandra Di Lorenzo</p>
+                <p class="related-guest">Alessandra Di Lorenzo &middot; LM Forward</p>
               </div>
             </a>
           </div>

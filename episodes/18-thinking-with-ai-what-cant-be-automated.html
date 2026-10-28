@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thinking with AI: what can’t be automated? with Peter Danenberg — The AI Lyceum Podcast, Ep. 18</title>
-    <meta name="description" content="Peter Danenberg of Google DeepMind on the limits of thought, language and what cannot be automated. Episode 18 of The AI Lyceum podcast with Peter Danenberg, Google DeepMind. 103 min." />
-    <meta name="keywords" content="Thinking with AI: what can’t be automated?, Peter Danenberg, The AI Lyceum, AI Lyceum podcast, Google DeepMind, automation limits, thought, language, philosophy of mind, Samraj Matharu" />
+    <meta name="description" content="Peter Danenberg of Google DeepMind on the limits of thought, language and what cannot be automated. Episode 18 of The AI Lyceum podcast with Peter Danenberg, Google DeepMind. 103 min. Long-form conversation on AI ethics, philosophy and governance. London, UK." />
+    <meta name="keywords" content="Thinking with AI: what can’t be automated?, Peter Danenberg, The AI Lyceum, AI Lyceum podcast, Google DeepMind, automation limits, thought, language, philosophy of mind, Samraj Matharu, AI ethics podcast, AI podcast London" />
     <meta property="og:title" content="Thinking with AI: what can’t be automated? — The AI Lyceum Podcast, Ep. 18" />
     <meta property="og:description" content="Peter Danenberg of Google DeepMind on the limits of thought, language and what cannot be automated." />
     <meta property="og:type" content="article" />
@@ -15,6 +15,9 @@
     <meta property="og:image:width" content="1400" />
     <meta property="og:image:height" content="1400" />
     <meta property="og:image:alt" content="The AI Lyceum podcast — Thinking with AI: what can’t be automated?" />
+    <meta property="article:published_time" content="2026-01-13" />
+    <meta property="article:author" content="https://samrajmatharu.com" />
+    <meta property="article:section" content="AI Philosophy &amp; Consciousness" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Thinking with AI: what can’t be automated? — The AI Lyceum, Ep. 18" />
     <meta name="twitter:description" content="Peter Danenberg of Google DeepMind on the limits of thought, language and what cannot be automated." />
@@ -22,6 +25,10 @@
     <meta name="twitter:image:alt" content="The AI Lyceum podcast — Thinking with AI: what can’t be automated?" />
     <meta name="theme-color" content="#0C0C0E" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="geo.region" content="GB-LND" />
+    <meta name="geo.placename" content="London" />
+    <meta name="geo.position" content="51.5074;-0.1278" />
+    <meta name="ICBM" content="51.5074, -0.1278" />
     <link rel="canonical" href="https://theailyceum.com/episodes/18-thinking-with-ai-what-cant-be-automated.html" />
     <link rel="me" href="/llms.txt" />
     <link rel="alternate" type="application/rss+xml" title="The AI Lyceum Podcast RSS" href="https://media.rss.com/the-ai-lyceum/feed.xml" />
@@ -53,7 +60,8 @@
           "actor": {
             "@type": "Person",
             "name": "Peter Danenberg",
-            "affiliation": { "@type": "Organization", "name": "Google DeepMind" }
+            "affiliation": { "@type": "Organization", "name": "Google DeepMind" },
+            "sameAs": ["https://deepmind.google/", "https://www.linkedin.com/in/peterdanenberg/", "https://danenberg.ai/"]
           },
           "associatedMedia": { "@type": "AudioObject", "contentUrl": "https://content.rss.com/episodes/345777/2458330/the-ai-lyceum/2026_01_13_17_20_01_df640130-12e6-457f-9cb3-abe21720ae3d.mp3", "encodingFormat": "audio/mpeg" },
           "speakable": {
@@ -188,6 +196,26 @@
         text-transform: uppercase; letter-spacing: 0.1em;
       }
 
+      /* YouTube embed */
+      .youtube-embed {
+        margin: 0 0 24px; border-radius: 12px; overflow: hidden;
+        position: relative; background: var(--charcoal);
+      }
+      .yt-thumb-link {
+        display: block; position: relative;
+      }
+      .yt-thumb {
+        display: block; width: 100%; height: auto;
+        aspect-ratio: 16 / 9; object-fit: cover;
+        transition: opacity 0.3s;
+      }
+      .yt-thumb-link:hover .yt-thumb { opacity: 0.85; }
+      .yt-play {
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        opacity: 0.9; transition: opacity 0.3s, transform 0.3s;
+      }
+      .yt-thumb-link:hover .yt-play { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+
       /* Audio player */
       .audio-section {
         padding: 0 0 32px;
@@ -218,6 +246,18 @@
         transition: background 0.3s, color 0.3s;
       }
       .platforms a:hover { background: var(--gold); color: var(--obsidian); }
+
+      /* Guest links */
+      .guest-links {
+        display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 0;
+      }
+      .guest-links a {
+        font-size: 12px; font-weight: 600; color: var(--pewter);
+        text-decoration: none; padding: 6px 14px;
+        border: 1px solid var(--border-light); border-radius: 20px;
+        transition: border-color 0.3s, color 0.3s;
+      }
+      .guest-links a:hover { border-color: var(--gold); color: var(--gold-hover); }
 
       /* Content sections */
       .section-divider {
@@ -276,6 +316,10 @@
         display: flex; align-items: center; justify-content: center;
         background: var(--obsidian); color: var(--gold);
         font-size: 12px; font-weight: 700; border-radius: 8px; margin-top: 2px;
+      }
+      .related-thumb {
+        flex-shrink: 0; width: 120px; height: 68px; object-fit: cover;
+        border-radius: 6px; margin-top: 2px;
       }
       .related-body { flex: 1; min-width: 0; }
       .related-title {
@@ -338,6 +382,7 @@
         .site-nav a:not(.nav-brand):not(.nav-episodes) { display: none; }
         .platforms { gap: 8px; }
         .platforms a { padding: 6px 14px; font-size: 12px; }
+        .related-thumb { width: 80px; height: 45px; }
       }
     </style>
   </head>
@@ -369,6 +414,9 @@
             <span>Episode 18</span>
           </div>
         </div>
+
+        <!-- YouTube video -->
+        
 
         <!-- Audio player -->
         <div class="audio-section">
@@ -412,7 +460,8 @@
         <!-- Guest bio -->
         <div class="guest-bio">
           <h3>About Peter Danenberg</h3>
-          <p>Google DeepMind researcher on the limits of thought, language and what cannot be automated. Peter Danenberg appeared on Episode 18 of The AI Lyceum podcast, hosted by <a href="https://samrajmatharu.com">Samraj Matharu</a>.</p>
+          <p>Senior Software Engineer at Google DeepMind, led zero-to-one development for Gemini, Research Fellow at Oxford Ethics in AI. Peter Danenberg appeared on Episode 18 of The AI Lyceum podcast, hosted by <a href="https://samrajmatharu.com">Samraj Matharu</a>.</p>
+          <div class="guest-links"><a href="https://deepmind.google/" target="_blank" rel="noopener noreferrer">Google DeepMind</a> <a href="https://www.linkedin.com/in/peterdanenberg/" target="_blank" rel="noopener noreferrer">LinkedIn</a> <a href="https://danenberg.ai/" target="_blank" rel="noopener noreferrer">Personal site</a></div>
         </div>
 
         <div class="section-divider"></div>
@@ -432,10 +481,11 @@
               <span class="related-num">17</span>
               <div class="related-body">
                 <p class="related-title">The future of law with AI: making sense of it all</p>
-                <p class="related-guest">Stephen Dnes</p>
+                <p class="related-guest">Stephen Dnes &middot; Royal Holloway, University of London</p>
               </div>
             </a>
             <a class="related-item" href="/episodes/10-conscious-ai-and-protopia.html">
+              <img src="https://img.youtube.com/vi/x-S1FYA5Dt0/mqdefault.jpg" alt="" class="related-thumb" loading="lazy" width="120" height="68" />
               <span class="related-num">10</span>
               <div class="related-body">
                 <p class="related-title">Conscious AI and protopia: the future of intelligence</p>

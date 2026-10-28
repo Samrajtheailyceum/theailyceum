@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI is a question machine: teaching thinking, not answers with Casandra Sibilin — The AI Lyceum Podcast, Ep. 19</title>
-    <meta name="description" content="Philosophy lecturer Casandra Sibilin on why AI is not an oracle but a question machine. Episode 19 of The AI Lyceum podcast with Casandra Sibilin, CUNY. 56 min." />
-    <meta name="keywords" content="AI is a question machine: teaching thinking, not answers, Casandra Sibilin, The AI Lyceum, AI Lyceum podcast, AI and philosophy, critical thinking, teaching, Socratic method, AI in education, Samraj Matharu" />
+    <meta name="description" content="Philosophy lecturer Casandra Sibilin on why AI is not an oracle but a question machine. Episode 19 of The AI Lyceum podcast with Casandra Sibilin, CUNY. 56 min. Long-form conversation on AI ethics, philosophy and governance. London, UK." />
+    <meta name="keywords" content="AI is a question machine: teaching thinking, not answers, Casandra Sibilin, The AI Lyceum, AI Lyceum podcast, AI and philosophy, critical thinking, teaching, Socratic method, AI in education, Samraj Matharu, AI ethics podcast, AI podcast London" />
     <meta property="og:title" content="AI is a question machine: teaching thinking, not answers — The AI Lyceum Podcast, Ep. 19" />
     <meta property="og:description" content="Philosophy lecturer Casandra Sibilin on why AI is not an oracle but a question machine." />
     <meta property="og:type" content="article" />
@@ -15,6 +15,9 @@
     <meta property="og:image:width" content="1400" />
     <meta property="og:image:height" content="1400" />
     <meta property="og:image:alt" content="The AI Lyceum podcast — AI is a question machine: teaching thinking, not answers" />
+    <meta property="article:published_time" content="2026-01-21" />
+    <meta property="article:author" content="https://samrajmatharu.com" />
+    <meta property="article:section" content="AI Philosophy &amp; Consciousness" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="AI is a question machine: teaching thinking, not answers — The AI Lyceum, Ep. 19" />
     <meta name="twitter:description" content="Philosophy lecturer Casandra Sibilin on why AI is not an oracle but a question machine." />
@@ -22,6 +25,10 @@
     <meta name="twitter:image:alt" content="The AI Lyceum podcast — AI is a question machine: teaching thinking, not answers" />
     <meta name="theme-color" content="#0C0C0E" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="geo.region" content="GB-LND" />
+    <meta name="geo.placename" content="London" />
+    <meta name="geo.position" content="51.5074;-0.1278" />
+    <meta name="ICBM" content="51.5074, -0.1278" />
     <link rel="canonical" href="https://theailyceum.com/episodes/19-ai-is-a-question-machine.html" />
     <link rel="me" href="/llms.txt" />
     <link rel="alternate" type="application/rss+xml" title="The AI Lyceum Podcast RSS" href="https://media.rss.com/the-ai-lyceum/feed.xml" />
@@ -53,7 +60,8 @@
           "actor": {
             "@type": "Person",
             "name": "Casandra Sibilin",
-            "affiliation": { "@type": "Organization", "name": "CUNY" }
+            "affiliation": { "@type": "Organization", "name": "CUNY" },
+            "sameAs": ["https://www.york.cuny.edu/directory/csilvasibilin", "https://www.linkedin.com/in/casandra-silva-sibilin-5b910158/"]
           },
           "associatedMedia": { "@type": "AudioObject", "contentUrl": "https://content.rss.com/episodes/345777/2474876/the-ai-lyceum/2026_01_21_12_14_45_160a8b37-2ec5-4c2a-b0a4-d29977aeacf7.mp3", "encodingFormat": "audio/mpeg" },
           "speakable": {
@@ -188,6 +196,26 @@
         text-transform: uppercase; letter-spacing: 0.1em;
       }
 
+      /* YouTube embed */
+      .youtube-embed {
+        margin: 0 0 24px; border-radius: 12px; overflow: hidden;
+        position: relative; background: var(--charcoal);
+      }
+      .yt-thumb-link {
+        display: block; position: relative;
+      }
+      .yt-thumb {
+        display: block; width: 100%; height: auto;
+        aspect-ratio: 16 / 9; object-fit: cover;
+        transition: opacity 0.3s;
+      }
+      .yt-thumb-link:hover .yt-thumb { opacity: 0.85; }
+      .yt-play {
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        opacity: 0.9; transition: opacity 0.3s, transform 0.3s;
+      }
+      .yt-thumb-link:hover .yt-play { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+
       /* Audio player */
       .audio-section {
         padding: 0 0 32px;
@@ -218,6 +246,18 @@
         transition: background 0.3s, color 0.3s;
       }
       .platforms a:hover { background: var(--gold); color: var(--obsidian); }
+
+      /* Guest links */
+      .guest-links {
+        display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 0;
+      }
+      .guest-links a {
+        font-size: 12px; font-weight: 600; color: var(--pewter);
+        text-decoration: none; padding: 6px 14px;
+        border: 1px solid var(--border-light); border-radius: 20px;
+        transition: border-color 0.3s, color 0.3s;
+      }
+      .guest-links a:hover { border-color: var(--gold); color: var(--gold-hover); }
 
       /* Content sections */
       .section-divider {
@@ -276,6 +316,10 @@
         display: flex; align-items: center; justify-content: center;
         background: var(--obsidian); color: var(--gold);
         font-size: 12px; font-weight: 700; border-radius: 8px; margin-top: 2px;
+      }
+      .related-thumb {
+        flex-shrink: 0; width: 120px; height: 68px; object-fit: cover;
+        border-radius: 6px; margin-top: 2px;
       }
       .related-body { flex: 1; min-width: 0; }
       .related-title {
@@ -338,6 +382,7 @@
         .site-nav a:not(.nav-brand):not(.nav-episodes) { display: none; }
         .platforms { gap: 8px; }
         .platforms a { padding: 6px 14px; font-size: 12px; }
+        .related-thumb { width: 80px; height: 45px; }
       }
     </style>
   </head>
@@ -369,6 +414,9 @@
             <span>Episode 19</span>
           </div>
         </div>
+
+        <!-- YouTube video -->
+        
 
         <!-- Audio player -->
         <div class="audio-section">
@@ -412,7 +460,8 @@
         <!-- Guest bio -->
         <div class="guest-bio">
           <h3>About Casandra Sibilin</h3>
-          <p>Philosophy lecturer at CUNY exploring AI as a tool for questioning rather than answering. Casandra Sibilin appeared on Episode 19 of The AI Lyceum podcast, hosted by <a href="https://samrajmatharu.com">Samraj Matharu</a>.</p>
+          <p>Lecturer of Philosophy and discipline coordinator at York College, CUNY, exploring AI as a tool for questioning rather than answering. Casandra Sibilin appeared on Episode 19 of The AI Lyceum podcast, hosted by <a href="https://samrajmatharu.com">Samraj Matharu</a>.</p>
+          <div class="guest-links"><a href="https://www.york.cuny.edu/directory/csilvasibilin" target="_blank" rel="noopener noreferrer">CUNY</a> <a href="https://www.linkedin.com/in/casandra-silva-sibilin-5b910158/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
         </div>
 
         <div class="section-divider"></div>
@@ -432,14 +481,14 @@
               <span class="related-num">17</span>
               <div class="related-body">
                 <p class="related-title">The future of law with AI: making sense of it all</p>
-                <p class="related-guest">Stephen Dnes</p>
+                <p class="related-guest">Stephen Dnes &middot; Royal Holloway, University of London</p>
               </div>
             </a>
             <a class="related-item" href="/episodes/13-can-ai-cure-loneliness.html">
               <span class="related-num">13</span>
               <div class="related-body">
                 <p class="related-title">Can AI cure loneliness? The new human condition</p>
-                <p class="related-guest">Dr Lollie Mancey</p>
+                <p class="related-guest">Dr Lollie Mancey &middot; UCD Innovation Academy</p>
               </div>
             </a>
           </div>

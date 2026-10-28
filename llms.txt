@@ -13,7 +13,7 @@
 
 ## Key Facts
 
-- 37 published podcast episodes
+- 38 published podcast episodes
 - 60,000+ monthly audience
 - 1,000+ community members
 - 224 registered platform members across 110+ organisations
@@ -40,6 +40,7 @@ The AI Lyceum podcast features long-form conversations with researchers and prac
 
 ### Notable Guests
 
+- Dr Nana Ariel (rhetoric scholar, Tel Aviv University, Fulbright visiting scholar at Harvard)
 - Dr Quentin Reul (AI strategist, knowledge graphs and agentic workflows)
 - Dr Daniel Hulme (CEO of Satalia, Chief AI Officer at WPP, UK's #1 ranked Futurist Keynote Speaker)
 - Professor Benjamin Rosman (TIME100 AI 2025, University of the Witwatersrand)
@@ -67,6 +68,7 @@ The AI Lyceum podcast features long-form conversations with researchers and prac
 
 | Ep | Title | Guest | Date | URL |
 |----|-------|-------|------|-----|
+| 38 | AI and the myth of originality | Dr Nana Ariel | 2026-10-26 | https://theailyceum.com/episodes/38-ai-and-the-myth-of-originality.html |
 | 37 | Do you really need AI agents? | Dr Quentin Reul | 2026-09-24 | https://theailyceum.com/episodes/37-do-you-really-need-ai-agents.html |
 | 36 | Is AI making us less capable? | Professor Sven Nyholm | 2026-09-10 | https://theailyceum.com/episodes/36-is-ai-making-us-less-capable.html |
 | 35 | How AI is changing business — and the human skills that still matter | Dipika Sawhney | 2026-08-24 | https://theailyceum.com/episodes/35-how-ai-is-changing-business.html |

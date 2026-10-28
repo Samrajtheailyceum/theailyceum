@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inside the AI supply chain: how Cerebras powers fast AI with James Wang — The AI Lyceum Podcast, Ep. 29</title>
-    <meta name="description" content="Wafer-scale computing, AI infrastructure and why STEM is reducible to verifiable math. Episode 29 of The AI Lyceum podcast with James Wang, Cerebras. 55 min." />
-    <meta name="keywords" content="Inside the AI supply chain: how Cerebras powers fast AI, James Wang, The AI Lyceum, AI Lyceum podcast, AI infrastructure, Cerebras, wafer-scale computing, AI hardware, compute, Samraj Matharu" />
+    <meta name="description" content="Wafer-scale computing, AI infrastructure and why STEM is reducible to verifiable math. Episode 29 of The AI Lyceum podcast with James Wang, Cerebras. 55 min. Long-form conversation on AI ethics, philosophy and governance. London, UK." />
+    <meta name="keywords" content="Inside the AI supply chain: how Cerebras powers fast AI, James Wang, The AI Lyceum, AI Lyceum podcast, AI infrastructure, Cerebras, wafer-scale computing, AI hardware, compute, Samraj Matharu, AI ethics podcast, AI podcast London" />
     <meta property="og:title" content="Inside the AI supply chain: how Cerebras powers fast AI — The AI Lyceum Podcast, Ep. 29" />
     <meta property="og:description" content="Wafer-scale computing, AI infrastructure and why STEM is reducible to verifiable math." />
     <meta property="og:type" content="article" />
@@ -15,6 +15,9 @@
     <meta property="og:image:width" content="1400" />
     <meta property="og:image:height" content="1400" />
     <meta property="og:image:alt" content="The AI Lyceum podcast — Inside the AI supply chain: how Cerebras powers fast AI" />
+    <meta property="article:published_time" content="2026-04-26" />
+    <meta property="article:author" content="https://samrajmatharu.com" />
+    <meta property="article:section" content="AI Infrastructure &amp; Sustainability" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Inside the AI supply chain: how Cerebras powers fast AI — The AI Lyceum, Ep. 29" />
     <meta name="twitter:description" content="Wafer-scale computing, AI infrastructure and why STEM is reducible to verifiable math." />
@@ -22,6 +25,10 @@
     <meta name="twitter:image:alt" content="The AI Lyceum podcast — Inside the AI supply chain: how Cerebras powers fast AI" />
     <meta name="theme-color" content="#0C0C0E" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="geo.region" content="GB-LND" />
+    <meta name="geo.placename" content="London" />
+    <meta name="geo.position" content="51.5074;-0.1278" />
+    <meta name="ICBM" content="51.5074, -0.1278" />
     <link rel="canonical" href="https://theailyceum.com/episodes/29-inside-the-ai-supply-chain.html" />
     <link rel="me" href="/llms.txt" />
     <link rel="alternate" type="application/rss+xml" title="The AI Lyceum Podcast RSS" href="https://media.rss.com/the-ai-lyceum/feed.xml" />
@@ -53,7 +60,8 @@
           "actor": {
             "@type": "Person",
             "name": "James Wang",
-            "affiliation": { "@type": "Organization", "name": "Cerebras" }
+            "affiliation": { "@type": "Organization", "name": "Cerebras" },
+            "sameAs": ["https://www.cerebras.ai/", "https://www.linkedin.com/in/james-wang-5166575/"]
           },
           "associatedMedia": { "@type": "AudioObject", "contentUrl": "https://content.rss.com/episodes/345777/2769088/the-ai-lyceum/2026_04_26_20_39_59_e378cd8a-d7c6-4191-ae07-f4cc88a3019f.mp3", "encodingFormat": "audio/mpeg" },
           "speakable": {
@@ -188,6 +196,26 @@
         text-transform: uppercase; letter-spacing: 0.1em;
       }
 
+      /* YouTube embed */
+      .youtube-embed {
+        margin: 0 0 24px; border-radius: 12px; overflow: hidden;
+        position: relative; background: var(--charcoal);
+      }
+      .yt-thumb-link {
+        display: block; position: relative;
+      }
+      .yt-thumb {
+        display: block; width: 100%; height: auto;
+        aspect-ratio: 16 / 9; object-fit: cover;
+        transition: opacity 0.3s;
+      }
+      .yt-thumb-link:hover .yt-thumb { opacity: 0.85; }
+      .yt-play {
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        opacity: 0.9; transition: opacity 0.3s, transform 0.3s;
+      }
+      .yt-thumb-link:hover .yt-play { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+
       /* Audio player */
       .audio-section {
         padding: 0 0 32px;
@@ -218,6 +246,18 @@
         transition: background 0.3s, color 0.3s;
       }
       .platforms a:hover { background: var(--gold); color: var(--obsidian); }
+
+      /* Guest links */
+      .guest-links {
+        display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 0;
+      }
+      .guest-links a {
+        font-size: 12px; font-weight: 600; color: var(--pewter);
+        text-decoration: none; padding: 6px 14px;
+        border: 1px solid var(--border-light); border-radius: 20px;
+        transition: border-color 0.3s, color 0.3s;
+      }
+      .guest-links a:hover { border-color: var(--gold); color: var(--gold-hover); }
 
       /* Content sections */
       .section-divider {
@@ -276,6 +316,10 @@
         display: flex; align-items: center; justify-content: center;
         background: var(--obsidian); color: var(--gold);
         font-size: 12px; font-weight: 700; border-radius: 8px; margin-top: 2px;
+      }
+      .related-thumb {
+        flex-shrink: 0; width: 120px; height: 68px; object-fit: cover;
+        border-radius: 6px; margin-top: 2px;
       }
       .related-body { flex: 1; min-width: 0; }
       .related-title {
@@ -338,6 +382,7 @@
         .site-nav a:not(.nav-brand):not(.nav-episodes) { display: none; }
         .platforms { gap: 8px; }
         .platforms a { padding: 6px 14px; font-size: 12px; }
+        .related-thumb { width: 80px; height: 45px; }
       }
     </style>
   </head>
@@ -369,6 +414,9 @@
             <span>Episode 29</span>
           </div>
         </div>
+
+        <!-- YouTube video -->
+        
 
         <!-- Audio player -->
         <div class="audio-section">
@@ -412,7 +460,8 @@
         <!-- Guest bio -->
         <div class="guest-bio">
           <h3>About James Wang</h3>
-          <p>Cerebras executive on wafer-scale computing and AI infrastructure. James Wang appeared on Episode 29 of The AI Lyceum podcast, hosted by <a href="https://samrajmatharu.com">Samraj Matharu</a>.</p>
+          <p>Director of Product Marketing at Cerebras Systems, covering wafer-scale computing and AI infrastructure. James Wang appeared on Episode 29 of The AI Lyceum podcast, hosted by <a href="https://samrajmatharu.com">Samraj Matharu</a>.</p>
+          <div class="guest-links"><a href="https://www.cerebras.ai/" target="_blank" rel="noopener noreferrer">Cerebras</a> <a href="https://www.linkedin.com/in/james-wang-5166575/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
         </div>
 
         <div class="section-divider"></div>
@@ -432,7 +481,7 @@
               <span class="related-num">9</span>
               <div class="related-body">
                 <p class="related-title">Can AI be green? The truth about data, power and planet</p>
-                <p class="related-guest">Pascal Joly</p>
+                <p class="related-guest">Pascal Joly &middot; IT Climate Ed</p>
               </div>
             </a>
             <a class="related-item" href="/episodes/3-making-ai-100-percent-sustainable.html">

@@ -4,24 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Robots are leaving the lab: physical AI, humanoids and the future of work with Sacha Ghiglione — The AI Lyceum Podcast, Ep. 32</title>
-    <meta name="description" content="Physical AI, humanoid robots and the future of human-machine collaboration in the workplace. Episode 32 of The AI Lyceum podcast with Sacha Ghiglione. " />
-    <meta name="keywords" content="Robots are leaving the lab: physical AI, humanoids and the future of work, Sacha Ghiglione, The AI Lyceum, AI Lyceum podcast, physical AI, humanoid robots, robotics, future of work, human-machine collaboration, Samraj Matharu" />
+    <meta name="description" content="Physical AI, humanoid robots and the future of human-machine collaboration in the workplace. Episode 32 of The AI Lyceum podcast with Sacha Ghiglione, Davos Tech Summit.  Long-form conversation on AI ethics, philosophy and governance. London, UK." />
+    <meta name="keywords" content="Robots are leaving the lab: physical AI, humanoids and the future of work, Sacha Ghiglione, The AI Lyceum, AI Lyceum podcast, physical AI, humanoid robots, robotics, future of work, human-machine collaboration, Samraj Matharu, AI ethics podcast, AI podcast London" />
     <meta property="og:title" content="Robots are leaving the lab: physical AI, humanoids and the future of work — The AI Lyceum Podcast, Ep. 32" />
     <meta property="og:description" content="Physical AI, humanoid robots and the future of human-machine collaboration in the workplace." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://theailyceum.com/episodes/32-robots-are-leaving-the-lab.html" />
     <meta property="og:site_name" content="The AI Lyceum" />
-    <meta property="og:image" content="https://media.rss.com/the-ai-lyceum/20250904_110936_a722fada418428b02d5417c12a526b4e.png" />
-    <meta property="og:image:width" content="1400" />
-    <meta property="og:image:height" content="1400" />
+    <meta property="og:image" content="https://img.youtube.com/vi/CScQm_loEIc/maxresdefault.jpg" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" />
     <meta property="og:image:alt" content="The AI Lyceum podcast — Robots are leaving the lab: physical AI, humanoids and the future of work" />
+    <meta property="article:published_time" content="2026-05-26" />
+    <meta property="article:author" content="https://samrajmatharu.com" />
+    <meta property="article:section" content="AI Infrastructure &amp; Sustainability" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Robots are leaving the lab: physical AI, humanoids and the future of work — The AI Lyceum, Ep. 32" />
     <meta name="twitter:description" content="Physical AI, humanoid robots and the future of human-machine collaboration in the workplace." />
-    <meta name="twitter:image" content="https://media.rss.com/the-ai-lyceum/20250904_110936_a722fada418428b02d5417c12a526b4e.png" />
+    <meta name="twitter:image" content="https://img.youtube.com/vi/CScQm_loEIc/maxresdefault.jpg" />
     <meta name="twitter:image:alt" content="The AI Lyceum podcast — Robots are leaving the lab: physical AI, humanoids and the future of work" />
     <meta name="theme-color" content="#0C0C0E" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="geo.region" content="GB-LND" />
+    <meta name="geo.placename" content="London" />
+    <meta name="geo.position" content="51.5074;-0.1278" />
+    <meta name="ICBM" content="51.5074, -0.1278" />
     <link rel="canonical" href="https://theailyceum.com/episodes/32-robots-are-leaving-the-lab.html" />
     <link rel="me" href="/llms.txt" />
     <link rel="alternate" type="application/rss+xml" title="The AI Lyceum Podcast RSS" href="https://media.rss.com/the-ai-lyceum/feed.xml" />
@@ -52,7 +59,9 @@
           },
           "actor": {
             "@type": "Person",
-            "name": "Sacha Ghiglione"
+            "name": "Sacha Ghiglione",
+            "affiliation": { "@type": "Organization", "name": "Davos Tech Summit" },
+            "sameAs": ["https://davostechsummit.com/", "https://www.linkedin.com/in/sachaghi/"]
           },
           
           "speakable": {
@@ -82,6 +91,16 @@
               "item": "https://theailyceum.com/episodes/32-robots-are-leaving-the-lab.html"
             }
           ]
+        },
+        {
+          "@type": "VideoObject",
+          "name": "Robots are leaving the lab: physical AI, humanoids and the future of work",
+          "description": "Physical AI, humanoid robots and the future of human-machine collaboration in the workplace.",
+          "thumbnailUrl": "https://img.youtube.com/vi/CScQm_loEIc/maxresdefault.jpg",
+          "uploadDate": "2026-05-26",
+          "embedUrl": "https://www.youtube.com/embed/CScQm_loEIc",
+          "contentUrl": "https://www.youtube.com/watch?v=CScQm_loEIc",
+          "publisher": { "@id": "https://theailyceum.com/#organization" }
         }
       ]
     }
@@ -187,6 +206,26 @@
         text-transform: uppercase; letter-spacing: 0.1em;
       }
 
+      /* YouTube embed */
+      .youtube-embed {
+        margin: 0 0 24px; border-radius: 12px; overflow: hidden;
+        position: relative; background: var(--charcoal);
+      }
+      .yt-thumb-link {
+        display: block; position: relative;
+      }
+      .yt-thumb {
+        display: block; width: 100%; height: auto;
+        aspect-ratio: 16 / 9; object-fit: cover;
+        transition: opacity 0.3s;
+      }
+      .yt-thumb-link:hover .yt-thumb { opacity: 0.85; }
+      .yt-play {
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        opacity: 0.9; transition: opacity 0.3s, transform 0.3s;
+      }
+      .yt-thumb-link:hover .yt-play { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+
       /* Audio player */
       .audio-section {
         padding: 0 0 32px;
@@ -217,6 +256,18 @@
         transition: background 0.3s, color 0.3s;
       }
       .platforms a:hover { background: var(--gold); color: var(--obsidian); }
+
+      /* Guest links */
+      .guest-links {
+        display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 0;
+      }
+      .guest-links a {
+        font-size: 12px; font-weight: 600; color: var(--pewter);
+        text-decoration: none; padding: 6px 14px;
+        border: 1px solid var(--border-light); border-radius: 20px;
+        transition: border-color 0.3s, color 0.3s;
+      }
+      .guest-links a:hover { border-color: var(--gold); color: var(--gold-hover); }
 
       /* Content sections */
       .section-divider {
@@ -275,6 +326,10 @@
         display: flex; align-items: center; justify-content: center;
         background: var(--obsidian); color: var(--gold);
         font-size: 12px; font-weight: 700; border-radius: 8px; margin-top: 2px;
+      }
+      .related-thumb {
+        flex-shrink: 0; width: 120px; height: 68px; object-fit: cover;
+        border-radius: 6px; margin-top: 2px;
       }
       .related-body { flex: 1; min-width: 0; }
       .related-title {
@@ -337,6 +392,7 @@
         .site-nav a:not(.nav-brand):not(.nav-episodes) { display: none; }
         .platforms { gap: 8px; }
         .platforms a { padding: 6px 14px; font-size: 12px; }
+        .related-thumb { width: 80px; height: 45px; }
       }
     </style>
   </head>
@@ -361,12 +417,22 @@
           <span class="ep-number">32</span>
           <h1>Robots are leaving the lab: physical AI, humanoids and the future of work</h1>
           <p class="ep-guest-name">Sacha Ghiglione</p>
-          
+          <p class="ep-guest-affiliation">Davos Tech Summit</p>
           <div class="ep-meta">
             <span>26 May 2026</span>
             
             <span>Episode 32</span>
           </div>
+        </div>
+
+        <!-- YouTube video -->
+        <div class="youtube-embed">
+          <a href="https://www.youtube.com/watch?v=CScQm_loEIc" target="_blank" rel="noopener noreferrer" class="yt-thumb-link" aria-label="Watch on YouTube">
+            <img src="https://img.youtube.com/vi/CScQm_loEIc/hqdefault.jpg" alt="Watch Episode 32: Robots are leaving the lab: physical AI, humanoids and the future of work on YouTube" class="yt-thumb" loading="lazy" width="480" height="360" />
+            <span class="yt-play" aria-hidden="true">
+              <svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24 27 14v20" fill="#fff"/></svg>
+            </span>
+          </a>
         </div>
 
         <!-- Audio player -->
@@ -408,7 +474,8 @@
         <!-- Guest bio -->
         <div class="guest-bio">
           <h3>About Sacha Ghiglione</h3>
-          <p>Robotics expert working on physical AI and humanoid robots. Sacha Ghiglione appeared on Episode 32 of The AI Lyceum podcast, hosted by <a href="https://samrajmatharu.com">Samraj Matharu</a>.</p>
+          <p>Executive Director of Davos Tech Summit, robotics expert working on physical AI and humanoid robots. Sacha Ghiglione appeared on Episode 32 of The AI Lyceum podcast, hosted by <a href="https://samrajmatharu.com">Samraj Matharu</a>.</p>
+          <div class="guest-links"><a href="https://davostechsummit.com/" target="_blank" rel="noopener noreferrer">Davos Tech Summit</a> <a href="https://www.linkedin.com/in/sachaghi/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
         </div>
 
         <div class="section-divider"></div>
@@ -425,6 +492,7 @@
               </div>
             </a>
             <a class="related-item" href="/episodes/10-conscious-ai-and-protopia.html">
+              <img src="https://img.youtube.com/vi/x-S1FYA5Dt0/mqdefault.jpg" alt="" class="related-thumb" loading="lazy" width="120" height="68" />
               <span class="related-num">10</span>
               <div class="related-body">
                 <p class="related-title">Conscious AI and protopia: the future of intelligence</p>
